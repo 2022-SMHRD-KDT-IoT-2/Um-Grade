@@ -15,7 +15,7 @@
 		이렇게 해야 한다.
 	-->
 	
-	<select id="selectMember" resultType="memberVO">
+	<select id="selectMember" resultType="MemberVO">
 		SELECT * FROM t_user
 	</select>
 	
