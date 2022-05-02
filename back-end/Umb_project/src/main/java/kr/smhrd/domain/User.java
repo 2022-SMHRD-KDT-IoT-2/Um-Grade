@@ -1,8 +1,12 @@
 package kr.smhrd.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 	private String user_id;		// 아이디
 	private String user_pw;		// 비밀번호

@@ -10,4 +10,8 @@ public interface UserMapper {
 
 	@Select("select * from t_user")
 	public List<User> selectUser();
+	
+	public String userLogin(User user);
+		
+	
 }

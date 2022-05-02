@@ -18,4 +18,11 @@ public class UserService {
 		List<User> list = mapper.selectUser();
 		return list;
 	}
+	
+	public String userLogin(User user) {
+		
+		String nick = mapper.userLogin(user);
+		
+		return nick;
+	}
 }
