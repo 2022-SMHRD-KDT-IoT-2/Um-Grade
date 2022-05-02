@@ -23,4 +23,35 @@ public class UmbrellaDAOImpl implements UmbrellaDAO {
 		return sqlSession.selectList(Namespace+".selectUmbrella");
 	}
 
+	@Override
+	public int insertUmb(UmbrellaVO vo) throws Exception {
+		return sqlSession.insert(Namespace+".insertUmb");
+	}
+
+	@Override
+	public UmbrellaVO selectOneUmb(int umb_seq) throws Exception {
+		return sqlSession.selectOne(Namespace+".selectOneUmb");
+	}
+
+	@Override
+	public int deleteUmb(int umb_seq) throws Exception {
+		return sqlSession.delete(Namespace+".deleteUmb");
+	}
+
+	@Override
+	public int updateUmbRfid(UmbrellaVO vo) throws Exception {
+		return sqlSession.update(Namespace+".updateUmbRfid");
+	}
+
+	@Override
+	public int updateUmbCheck(UmbrellaVO vo) throws Exception {
+		return sqlSession.update(Namespace+".updateUmbCheck");
+	}
+
+	@Override
+	public int updateUmbBroken(UmbrellaVO vo) throws Exception {
+		return sqlSession.update(Namespace+".updateUmbBroken");
+	}
+
+
 }

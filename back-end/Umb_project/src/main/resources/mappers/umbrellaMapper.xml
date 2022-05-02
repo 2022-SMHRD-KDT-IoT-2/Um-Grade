@@ -9,4 +9,35 @@
 		SELECT * FROM t_umbrella
 	</select>
 	
+	<insert id="insertUmb" parameterType="com.example.dto.UmbrellaVO">
+	insert into t_umbrella(ubox_seq, umb_status, umb_broken, umb_rfid, umb_type) values
+	(#{ubox_seq}, #{umb_status}, #{umb_broken}, #{umb_rfid}, #{umb_type})
+	</insert>
+	
+	<select id="selectUmb" resultType="UmbrellaVO" parameterType="int">
+		SELECT * FROM t_umbrella where umb_seq = #{umb_seq}
+	</select>
+	
+	<delete id="deleteUmb" parameterType="int">
+		delete from t_umbrella where umb_seq = #{umb_seq}
+	</delete>
+	
+	<update id="updateUmbRfid" parameterType="com.example.dto.UmbrellaVO">
+		UPDATE t_umbrella
+			SET umb_rfid=#{umb_rfid}
+			WHERE umb_seq=#{umb_seq}
+	</update>
+	
+	<update id="updateUmbCheck" parameterType="com.example.dto.UmbrellaVO">
+		UPDATE t_umbrella
+			SET umb_check=#{now()}
+			WHERE umb_seq=#{umb_seq}
+	</update>
+	
+	<update id="updateUmbBroken" parameterType="com.example.dto.UmbrellaVO">
+		UPDATE t_umbrella
+			SET umb_broken=#{umb_broken}
+			WHERE umb_seq=#{umb_seq}
+	</update>
+	
 </mapper>
