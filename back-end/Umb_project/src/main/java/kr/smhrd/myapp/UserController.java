@@ -32,6 +32,7 @@ public class UserController {
 	public String userLogin(User user, HttpSession session) {
 		
 		String nick = service.userLogin(user);
+		//id,pw 값 확인 완료!
 		System.out.println(user.getUser_id());
 		System.out.println(user.getUser_pw());
 			
