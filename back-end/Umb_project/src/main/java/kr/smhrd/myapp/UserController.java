@@ -27,7 +27,7 @@ public class UserController {
 		
 		return "userList";
 	}
-	
+	//유저 로그인
 	@RequestMapping(value = "/Login", method = RequestMethod.POST)
 	public String userLogin(User user, HttpSession session) {
 		

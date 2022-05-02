@@ -23,7 +23,7 @@ public class RestUserController {
 		List<User> list = service.selectUser();
 		return list;
 	}
-	
+	//유저로그인
 	@RequestMapping(value = "/Login.do", method = RequestMethod.POST)
 	public String userLogin(User user, HttpSession session) {
 		

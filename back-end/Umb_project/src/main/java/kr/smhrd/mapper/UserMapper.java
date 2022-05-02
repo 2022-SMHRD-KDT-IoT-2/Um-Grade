@@ -11,6 +11,7 @@ public interface UserMapper {
 	@Select("select * from t_user")
 	public List<User> selectUser();
 	
+	//유저 로그인 
 	public String userLogin(User user);
 		
 	

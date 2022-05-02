@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
+@NoArgsConstructor //어노테이션 추가
 @AllArgsConstructor
 public class User {
 	private String user_id;		// 아이디

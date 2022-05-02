@@ -18,7 +18,7 @@ public class UserService {
 		List<User> list = mapper.selectUser();
 		return list;
 	}
-	
+	//유저로그인
 	public String userLogin(User user) {
 		
 		String nick = mapper.userLogin(user);
