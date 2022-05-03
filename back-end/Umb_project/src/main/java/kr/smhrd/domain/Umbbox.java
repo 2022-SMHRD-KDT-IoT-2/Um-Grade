@@ -1,8 +1,12 @@
 package kr.smhrd.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor //어노테이션 추가
+@AllArgsConstructor
 public class Umbbox {
 
 	private int ubox_seq;
