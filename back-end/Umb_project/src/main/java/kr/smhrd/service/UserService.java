@@ -13,16 +13,24 @@ public class UserService {
 
 	@Autowired
 	private UserMapper mapper;
-	
+
 	public List<User> selectUser() {
 		List<User> list = mapper.selectUser();
 		return list;
 	}
-	//유저로그인
+
+	// 유저 회원가입
+	public void userJoin(User user) {
+		mapper.userJoin(user);
+	}
+
+	// 유저로그인
 	public String userLogin(User user) {
-		
+
 		String nick = mapper.userLogin(user);
 		
 		return nick;
+		
 	}
+
 }

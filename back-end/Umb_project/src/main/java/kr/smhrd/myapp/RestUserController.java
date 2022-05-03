@@ -17,21 +17,47 @@ public class RestUserController {
 
 	@Autowired
 	private UserService service;
-	
+
 	@RequestMapping("/userList.do")
 	public List<User> user() {
 		List<User> list = service.selectUser();
 		return list;
 	}
-	
-	//유저로그인
-	@RequestMapping(value = "/Login.do", method = RequestMethod.POST)
-	public String userLogin(User user, HttpSession session) {
-		
-		String nick = service.userLogin(user);
+
+	// 유저 회원 가입
+	@RequestMapping(value = "/Join", method = RequestMethod.POST)
+	public String Join(User user) {
+
 		System.out.println(user.getUser_id());
 		System.out.println(user.getUser_pw());
-						
-		return nick;
+		System.out.println(user.getUser_nick());
+		System.out.println(user.getUser_email());
+		System.out.println(user.getUser_phone());
+//			System.out.println(user.getUser_joindate());
+		System.out.println(user.getUser_addr());
+		/*
+		 * System.out.println(user.getUser_type());
+		 * System.out.println(user.getUser_status());
+		 * System.out.println(user.getUser_point());
+		 */ service.userJoin(user);
+
+		return "success";
 	}
+
+	// 유저로그인
+	@RequestMapping(value = "/Login", method = RequestMethod.POST)
+	public String userLogin(User user) {
+		
+		String pw = service.userLogin(user);
+		
+	    
+		if (user.getUser_pw().equals(pw)) {
+			return "T";
+		} else {
+			return "F";
+
+		}
+		
+	}
+
 }
