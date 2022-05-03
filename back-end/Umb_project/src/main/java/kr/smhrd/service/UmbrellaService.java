@@ -20,4 +20,13 @@ public class UmbrellaService {
 		List<Umbrella> list = mapper.selectUmb();
 		return list;
 	}
+	
+	public void deleteUmb(int umb_seq) {
+		mapper.deleteUmb(umb_seq);
+	}
+	
+	public void updateUmbCheck(int umb_seq) {
+		mapper.updateUmbCheck(umb_seq);
+	}
+	
 }

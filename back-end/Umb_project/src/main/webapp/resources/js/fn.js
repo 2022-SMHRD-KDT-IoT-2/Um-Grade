@@ -18,3 +18,25 @@ function loadList(){
 	})
 }
 
+function umbList(){
+	$.ajax({
+		url :  getContextPath()+"/umbList.do",
+		type : "get",
+		dataType : "json",
+		success : htmlView,
+		error : function(){
+			alert("error")
+		}
+	})
+}
+
+function goUp(umb_seq){
+	$.ajax({
+		url : getContextPath()+"/umbUpdate.do",
+		type : "get",
+		data : {"umb_seq":umb_seq},
+		success : umbList,
+		error : function(){alert("error")}
+	})	
+}
+

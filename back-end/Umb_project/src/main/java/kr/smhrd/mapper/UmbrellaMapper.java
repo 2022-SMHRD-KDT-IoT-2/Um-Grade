@@ -14,20 +14,20 @@ public interface UmbrellaMapper {
 	public List<Umbrella> selectUmb();
 	
 	// 우산 추가
-	public void insertUmb();
+	public void insertUmb(Umbrella vo);
 	
 	// 파손정보 수정
-	public void updateUmbBroken();
+	public void updateUmbBroken(Umbrella vo);
 	
 	// 점검일자 수정
-	public void updateUmbCheck();
+	public void updateUmbCheck(int umb_seq);
 	
 	// RFID UID 수정
-	public void updateUmbRfid();
+	public void updateUmbRfid(Umbrella vo);
 	
 	// 우산 삭제
-	public void deleteUmb();
+	public void deleteUmb(int umb_seq);
 	
 	// 우산 개별 정보 조회
-	public void selectOneUmb();
+	public void selectOneUmb(int umb_seq);
 }

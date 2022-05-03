@@ -10,4 +10,19 @@
 		insert into t_umbrella(ubox_seq, umb_status, umb_broken, umb_rfid, umb_type) values (#{ubox_seq}, #{umb_status}, #{umb_broken}, #{umb_rfid}, #{umb_type});
 	</insert>
 	
+	<update id="updateUmbBroken" parameterType="kr.smhrd.domain.Umbrella">
+		update t_umbrella set umb_broken = #{umb_broken} where umb_seq = #{umb_seq}
+	</update>
+	
+	<update id="updateUmbCheck" parameterType="int">
+		update t_umbrella set umb_check = now() where umb_seq = #{umb_seq}
+	</update>
+	
+	<update id="updateUmbRfid" parameterType="kr.smhrd.domain.Umbrella">
+		update t_umbrella set umb_rfid = #{umb_rfid} where umb_seq = #{umb_seq}
+	</update>
+	
+	<delete id="deleteUmb" parameterType = "int">
+		delete from t_umbrella where umb_seq = #{umb_seq}
+	</delete>
 </mapper>

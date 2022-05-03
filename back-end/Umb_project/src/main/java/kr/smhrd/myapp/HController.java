@@ -35,6 +35,11 @@ public class HController {
 		return "userList";
 	}
 	
+	@RequestMapping("/umb")
+	public String umb() {
+		return "umbList";
+	}
+	
 	@Autowired
 	private QnaService qnaService;
 	
@@ -44,8 +49,6 @@ public class HController {
 	@Autowired
     private CouponService couponService;
 	
-	@Autowired
-    private UmbrellaService umbrellaService;
 	
 	@Autowired
 	private UmbboxService umbboxService;
@@ -92,18 +95,7 @@ public class HController {
 		return "couponList";
 	}
 	
-
 	
-	@RequestMapping("/umb.do")
-	public String umb(Model model) {
-		List<Umbrella> list = umbrellaService.selectUmb();
-		
-		model.addAttribute("list",list);
-		
-		return "umbList";
-	}
-	
-
 	
 	@RequestMapping("/ubox.do")
 	public String ubox(Model model) {
