@@ -12,6 +12,7 @@ public class User {
 	private String user_pw;		// 비밀번호
 	private String user_nick;	// 닉네임
 	private String user_email;	// 이메일
+	private String user_phone;
 	private String user_joindate;	// 가입일
 	private String user_addr;		// 주소
 	private String user_type;	// 유저 타입
