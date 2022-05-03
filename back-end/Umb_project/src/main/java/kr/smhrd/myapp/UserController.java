@@ -20,11 +20,7 @@ public class UserController {
 	private UserService service;
 	
 	@RequestMapping("/")
-	public String main(Model model) {
-		List<User> list = service.selectUser();
-		
-		model.addAttribute("list",list);
-		
+	public String main() {
 		return "userList";
 	}
 	//유저 로그인

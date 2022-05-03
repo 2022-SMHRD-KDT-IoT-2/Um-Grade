@@ -21,32 +21,31 @@
 <body>
 	<div class="container">
 		<h2>스프링 웹 엠브이씨 게시판</h2>
-		<div class="panel panel-default">
-			<div class="panel-heading">보드</div>
-			<div class="panel-body">
-				<table class="table table-bordered table-striped">
-					<tr>
-						<th>아이디</th>
-						<th>닉네임</th>
-						<th>비밀번호</th>
-						<th>주소</th>
-						<th>가입일자</th>
-					</tr>
-					<c:forEach var="vo" items="${list}">
-			         <tr>
-			            <td>${vo.user_id}</td>
-			            <td>${vo.user_nick}</a></td>
-			            <td>${vo.user_pw}</td>
-			            <td>${vo.user_addr}</td>
-			            <td>${vo.user_joindate}</td>
-			         </tr>
-			         </c:forEach>
-
-
-				</table>
-			</div>
-		</div>
+		<div class="panel-body" id="list"></div>
 	</div>
-	
 </body>
+
+<script src="resources/js/fn.js"></script>
+<script>
+$(document).ready(()=>{
+	loadList()
+})
+
+function htmlView(data){
+	var result = "<table class='table table-bordered table-hover'>"
+	result += "<tr><th>아이디</th><th>닉네임</th><th>비밀번호</th><th>주소</th><th>가입일자</th></tr>"
+
+	   $.each(data, (index, vo)=>{ // 오브젝트안에 있는 데이터 접근.
+		   result += "<tr>"
+			      result += "<td>"+vo.user_id+"</td>"
+			      result += "<td>"+vo.user_nick+"</td>"
+			      result += "<td>"+vo.user_pw+"</td>"
+			      result += "<td>"+vo.user_addr+"</td>"
+			      result += "<td>"+vo.user_joindate+"</td>"			     
+			      result += "</tr>"
+	   })
+	   result += "</table>"
+	   $("#list").html(result)
+}
+</script>
 </html>

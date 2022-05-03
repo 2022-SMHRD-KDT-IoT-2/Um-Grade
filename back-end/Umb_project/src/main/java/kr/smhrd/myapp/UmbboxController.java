@@ -8,8 +8,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.smhrd.domain.Qna;
+import kr.smhrd.domain.Rent;
 import kr.smhrd.domain.Umbbox;
 import kr.smhrd.service.QnaService;
+import kr.smhrd.service.RentService;
 import kr.smhrd.service.UmbboxService;
 
 @Controller
@@ -26,4 +28,5 @@ public class UmbboxController {
 		
 		return "uboxList";
 	}
+	
 }

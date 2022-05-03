@@ -19,10 +19,11 @@ public class RestUserController {
 	private UserService service;
 	
 	@RequestMapping("/userList.do")
-	public List<User> selectUser() {
+	public List<User> user() {
 		List<User> list = service.selectUser();
 		return list;
 	}
+	
 	//유저로그인
 	@RequestMapping(value = "/Login.do", method = RequestMethod.POST)
 	public String userLogin(User user, HttpSession session) {
