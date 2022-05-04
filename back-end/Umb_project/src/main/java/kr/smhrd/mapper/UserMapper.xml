@@ -11,13 +11,5 @@
 	<select id  = "userLogin" parameterType = "kr.smhrd.domain.User" resultType = "kr.smhrd.domain.User">
 		select * from t_user where user_id = #{user_id} and user_pw = #{user_pw}
 	</select>
-	<!-- 메인화면 유저 정보 -->
-	<select id = "userPoint" parameterType = "kr.smhrd.domain.User" resultType = "kr.smhrd.domain.User">
-		select * from t_user where user_id = #{user_id} 
-	</select>
-	
-	<select id = "userInfo" parameterType = "kr.smhrd.domain.User" resultType = "kr.smhrd.domain.User">
-		select * from t_user where user_id = #{user_id}
-	</select>
 	
 </mapper>

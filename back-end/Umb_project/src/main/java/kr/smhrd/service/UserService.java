@@ -33,15 +33,4 @@ public class UserService {
 
 	}
 
-	// 메인페이지 유저 포인트
-	public void userPoint(User user) {
-
-		mapper.userPoint(user);
-
-	}
-
-	// 마이페이지 유저 정보
-	public void userInfo(User user) {
-		mapper.userInfo(user);
-	}
 }

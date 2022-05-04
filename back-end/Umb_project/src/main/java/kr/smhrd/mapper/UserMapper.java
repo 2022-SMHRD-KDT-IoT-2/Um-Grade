@@ -16,10 +16,5 @@ public interface UserMapper {
 	
 	//유저 로그인 
 	public User userLogin(User user);
-		
-	//메인 페이지 유저 포인트 
-	public void userPoint(User user);
 	
-	//마이페이지 회원 정보
-	public void userInfo(User user);
 }

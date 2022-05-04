@@ -2,13 +2,10 @@ package kr.smhrd.myapp;
 
 import java.util.List;
 
-import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import kr.smhrd.domain.Rent;
@@ -57,49 +54,5 @@ public class RController {
 //	public int selectRt(int rent_seq) {
 //		return rentService.selectRentTime(rent_seq);
 //	}
-
-	// 유저 회원 가입
-	@RequestMapping(value = "/Join", method = RequestMethod.POST)
-	public String Join(User user) {
-
-		System.out.println(user.getUser_id());
-		System.out.println(user.getUser_pw());
-		System.out.println(user.getUser_nick());
-		System.out.println(user.getUser_email());
-		System.out.println(user.getUser_phone());
-		System.out.println(user.getUser_addr());
-		service.userJoin(user);
-
-		return "success";
-	}
-
-	// 유저로그인
-	@RequestMapping(value = "/Login", method = RequestMethod.POST)
-	public @ResponseBody User userLogin(User user) {
-
-		User info = service.userLogin(user);
-
-		return info;
-
-	}
-
-	// 메인페이지 회원 포인트 정보 
-	@RequestMapping(value = "/Main", method = RequestMethod.POST)
-	public String userPoint(User user) {
-
-		System.out.println(user.getUser_id());
-		service.userPoint(user);
-
-		return "";
-	}
-	
-	//마이페이지 회원 정보
-	@RequestMapping(value = "/MyInfo", method = RequestMethod.POST)
-	public void userInfo(User user) {
-		
-		System.out.println(user.getUser_id());
-		service.userInfo(user);				
-		
-	}
 
 }
