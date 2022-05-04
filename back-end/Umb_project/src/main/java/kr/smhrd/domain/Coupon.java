@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Coupon {
 
-	private int cp_seq;
-	private String cp_no;
-	private String cp_date;
-	private String cp_done;
-	private int cp_amount;
+	private int cp_seq; // 쿠폰 일련번호
+	private String cp_no; // 쿠폰 식별코드
+	private String cp_date; // 쿠폰 발급일자
+	private String cp_done; // 쿠폰 사용여부
+	private int cp_amount; // 쿠폰 금액
 	
 }

@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UsingCoupon {
 
-	private int uc_seq;
-	private String uc_id;
-	private String uc_date;
-	private int cp_seq;
+	private int uc_seq; // 사용쿠폰 일련번호
+	private String uc_id; // 사용쿠폰 식별코드
+	private String uc_date; // 쿠폰 사용일자
+	private int cp_seq; // 쿠폰 일련번호
 }

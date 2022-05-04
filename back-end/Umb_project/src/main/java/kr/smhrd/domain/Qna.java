@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Qna {
 
-	private int qna_seq;
-	private String qna_title;
-	private String qna_content;
-	private String qna_file;
-	private String qna_date;
-	private String qna_id;
+	private int qna_seq; // 질의응답 일련번호
+	private String qna_title; // 질의응답 제목
+	private String qna_content; // 질의응답 내용
+	private String qna_file; // 질의응답 첨부파일
+	private String qna_date; // 질의응답 작성일자
+	private String qna_id; // 질의응답 작성자
 	
 }

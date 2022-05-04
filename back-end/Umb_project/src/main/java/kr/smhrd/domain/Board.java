@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Board {
 
-	private int article_seq;
-	private String article_title;
-	private String article_content;
-	private String article_date;
-	private String article_file;
-	private String article_id;
-	private int article_cnt;
+	private int article_seq; // 커뮤니티 일련번호
+	private String article_title; // 커뮤니티 제목
+	private String article_content; // 커뮤니티 내용
+	private String article_date; // 커뮤니티 작성일자
+	private String article_file; // 커뮤니티 첨부파일
+	private String article_id; // 커뮤니티 작성자
+	private int article_cnt; // 커뮤니티 조회수
 }

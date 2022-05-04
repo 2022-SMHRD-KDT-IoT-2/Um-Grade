@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Comment {
 
-	private int cmt_seq;
-	private int article_seq;
-	private String cmt_content;
-	private String cmt_date;
-	private String cmt_id;
-	private int cmt_likes;
+	private int cmt_seq; // 댓글 일련번호
+	private int article_seq; // 커뮤니티 원문 번호
+	private String cmt_content; // 댓글 내용
+	private String cmt_date; // 댓글 작성일자
+	private String cmt_id; // 댓글 작성자
+	private int cmt_likes; // 댓글 좋아요 수
 	
 }

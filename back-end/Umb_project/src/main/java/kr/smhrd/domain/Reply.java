@@ -9,12 +9,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Reply {
 
-	private int reply_seq;
-	private int qna_seq;
-	private String reply_content;
-	private String reply_date;
-	private String reply_file;
-	private String reply_id;
+	private int reply_seq; // 답변 일련번호
+	private int qna_seq; // 질의응답 원문 일련번호
+	private String reply_content; // 답변 내용
+	private String reply_date; // 답변 작성일자
+	private String reply_file; // 답변 첨부파일
+	private String reply_id; // 답변 작성자
 
 	
 }

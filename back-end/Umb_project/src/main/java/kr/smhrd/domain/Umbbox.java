@@ -9,14 +9,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Umbbox {
 
-	private int ubox_seq;
-	private String ubox_loc;
-	private Double ubox_latitude;
-	private Double ubox_longitude;
-	private String ubox_status;
-	private int ubox_qty;
-	private String ubox_inst_dt;
-	private String admin_id;
-	private String ubox_check;
+	private int ubox_seq; // 보관함 일련번호
+	private String ubox_loc; // 보관함 설치장소명
+	private Double ubox_latitude; // 위도
+	private Double ubox_longitude; // 경도
+	private String ubox_status; // 보관함 상태
+	private int ubox_qty; // 보관함 수량
+	private String ubox_inst_dt; // 보관함 설치일자
+	private String admin_id; // 보관함 관리자
+	private String ubox_check; // 보관함 점검일자
 	
 }
