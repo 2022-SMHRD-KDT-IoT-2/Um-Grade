@@ -25,20 +25,23 @@ public class UserService {
 	}
 
 	// 유저로그인
-	public String userLogin(User user) {
+	public User userLogin(User user) {
 
-		String id = mapper.userLogin(user);
-		
-		return id;
-		
+		User info = mapper.userLogin(user);
+
+		return info;
+
 	}
-	
-	// 메인페이지 유저 가입 날짜 확인
-		public String userInfo(User user) {
 
-			String date = mapper.userInfo(user);
-			
-			return date;
-		}
+	// 메인페이지 유저 포인트
+	public void userPoint(User user) {
 
+		mapper.userPoint(user);
+
+	}
+
+	// 마이페이지 유저 정보
+	public void userInfo(User user) {
+		mapper.userInfo(user);
+	}
 }

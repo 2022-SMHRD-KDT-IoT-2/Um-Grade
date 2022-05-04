@@ -8,12 +8,16 @@
 		values (#{user_id}, #{user_pw}, #{user_nick}, #{user_email}, #{user_phone}, #{user_addr})
 	</insert>
 	<!-- 유저 로그인 -->
-	<select id  = "userLogin" parameterType = "kr.smhrd.domain.User" resultType = "String">
-		select user_id from t_user where user_id = #{user_id} and user_pw = #{user_pw}
+	<select id  = "userLogin" parameterType = "kr.smhrd.domain.User" resultType = "kr.smhrd.domain.User">
+		select * from t_user where user_id = #{user_id} and user_pw = #{user_pw}
 	</select>
-	<!-- 메인화면 유저가입 일자 -->
-	<select id = "userInfo" parameterType = "kr.smhrd.domain.User" resultType = "String">
-		select user_joindate from t_user where user_id = #{user_id}; 
+	<!-- 메인화면 유저 정보 -->
+	<select id = "userPoint" parameterType = "kr.smhrd.domain.User" resultType = "kr.smhrd.domain.User">
+		select * from t_user where user_id = #{user_id} 
+	</select>
+	
+	<select id = "userInfo" parameterType = "kr.smhrd.domain.User" resultType = "kr.smhrd.domain.User">
+		select * from t_user where user_id = #{user_id}
 	</select>
 	
 </mapper>

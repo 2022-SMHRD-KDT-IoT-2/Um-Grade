@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import kr.smhrd.domain.Rent;
@@ -74,27 +75,31 @@ public class RController {
 
 	// 유저로그인
 	@RequestMapping(value = "/Login", method = RequestMethod.POST)
-	public String userLogin(User user) {
+	public @ResponseBody User userLogin(User user) {
 
-		String id = service.userLogin(user);
+		User info = service.userLogin(user);
 
-		if (!id.equals(user.getUser_id())) {
-			return "F";
-		} else {
-			return id;
-
-		}
+		return info;
 
 	}
 
-	// 메인페이지 회원 가입일자
+	// 메인페이지 회원 포인트 정보 
 	@RequestMapping(value = "/Main", method = RequestMethod.POST)
-	public String userInfo(User user) {
+	public String userPoint(User user) {
 
 		System.out.println(user.getUser_id());
-		String date = service.userInfo(user);
+		service.userPoint(user);
 
-		return date;
+		return "";
+	}
+	
+	//마이페이지 회원 정보
+	@RequestMapping(value = "/MyInfo", method = RequestMethod.POST)
+	public void userInfo(User user) {
+		
+		System.out.println(user.getUser_id());
+		service.userInfo(user);				
+		
 	}
 
 }
