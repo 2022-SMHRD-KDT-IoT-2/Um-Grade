@@ -22,41 +22,40 @@ public class RController {
 
 	@Autowired
 	private UserService service;
-	
+
 	@Autowired
 	private RentService rentService;
 
 	@Autowired
-    private UmbrellaService umbrellaService;
-	
+	private UmbrellaService umbrellaService;
+
 	@RequestMapping("/userList.do")
 	public List<User> user() {
 		List<User> list = service.selectUser();
 		return list;
 	}
-	
+
 	@RequestMapping("/rentList.do")
 	public List<Rent> Rent(Model model) {
 		List<Rent> list = rentService.selectRent();
 		return list;
 	}
-	
+
 	@RequestMapping("/umbList.do")
 	public List<Umbrella> umb() {
 		List<Umbrella> list = umbrellaService.selectUmb();
 		return list;
 	}
-	
+
 	@RequestMapping("/umbUpdate.do")
 	public void umbUp(int umb_seq) {
 		umbrellaService.updateUmbCheck(umb_seq);
 	}
-	
+
 //	@RequestMapping("/selectRt.do")
 //	public int selectRt(int rent_seq) {
 //		return rentService.selectRentTime(rent_seq);
 //	}
-	
 
 	// 유저 회원 가입
 	@RequestMapping(value = "/Join", method = RequestMethod.POST)
@@ -76,17 +75,26 @@ public class RController {
 	// 유저로그인
 	@RequestMapping(value = "/Login", method = RequestMethod.POST)
 	public String userLogin(User user) {
-		
-		String pw = service.userLogin(user);
-		
-	    
-		if (user.getUser_pw().equals(pw)) {
-			return "T";
-		} else {
+
+		String id = service.userLogin(user);
+
+		if (!id.equals(user.getUser_id())) {
 			return "F";
+		} else {
+			return id;
 
 		}
-		
+
+	}
+
+	// 메인페이지 회원 가입일자
+	@RequestMapping(value = "/Main", method = RequestMethod.POST)
+	public String userInfo(User user) {
+
+		System.out.println(user.getUser_id());
+		String date = service.userInfo(user);
+
+		return date;
 	}
 
 }
