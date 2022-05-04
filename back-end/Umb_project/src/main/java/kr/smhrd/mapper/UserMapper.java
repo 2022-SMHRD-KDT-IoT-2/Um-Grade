@@ -17,5 +17,6 @@ public interface UserMapper {
 	//유저 로그인 
 	public String userLogin(User user);
 		
-	
+	//메인 페이지 유저 회원가입 일자 정보
+	public String userInfo(User user);
 }

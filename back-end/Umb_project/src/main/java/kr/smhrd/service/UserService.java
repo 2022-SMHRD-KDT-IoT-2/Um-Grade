@@ -27,10 +27,18 @@ public class UserService {
 	// 유저로그인
 	public String userLogin(User user) {
 
-		String nick = mapper.userLogin(user);
+		String id = mapper.userLogin(user);
 		
-		return nick;
+		return id;
 		
 	}
+	
+	// 메인페이지 유저 가입 날짜 확인
+		public String userInfo(User user) {
+
+			String date = mapper.userInfo(user);
+			
+			return date;
+		}
 
 }
