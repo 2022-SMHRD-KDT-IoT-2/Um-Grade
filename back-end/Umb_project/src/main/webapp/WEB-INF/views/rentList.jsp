@@ -19,34 +19,33 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<h2>스프링 웹 엠브이씨 게시판</h2>
-		<div class="panel panel-default">
-			<div class="panel-heading">보드</div>
-			<div class="panel-body">
-				<table class="table table-bordered table-striped">
-					<tr>
-						<th>일련번호</th>
-						<th>대여자</th>
-						<th>우산번호</th>
-						<th>대여일자</th>
-						<th>결제수단</th>
-					</tr>
-					<c:forEach var="vo" items="${list}">
-			         <tr>
-			            <td>${vo.rent_seq}</td>
-			            <td>${vo.rent_id}</a></td>
-			            <td>${vo.umb_seq}</td>
-			            <td>${vo.rent_s_date}</td>
-			            <td>${vo.pay_method}</td>
-			         </tr>
-			         </c:forEach>
-
-
-				</table>
-			</div>
-		</div>
+<div class="container">
+		<h2>스프링 웹 엠브이씨 게시판 (대여목록)</h2>
+		<div class="panel-body" id="list"></div>
 	</div>
-	
 </body>
+<script src="resources/js/fn.js"></script>
+<script>
+$(document).ready(()=>{
+	rentList()
+})
+
+function htmlView(data){
+	var result = "<table class='table table-bordered table-hover'>"
+	result += "<tr><th>일련번호</th><th>대여자</th><th>우산번호</th><th>대여일자</th><th>반납일자</th></tr>"
+
+	   $.each(data, (index, vo)=>{ // 오브젝트안에 있는 데이터 접근.
+		   result += "<tr>"
+			      result += "<td>"+vo.rent_seq+"</td>"
+			      result += "<td>"+vo.rent_id+"</td>"
+			      result += "<td>"+vo.umb_seq+"</td>"
+			      result += "<td>"+vo.rent_s_date+"</td>"
+			      result += "<td>"+vo.rent_e_date+"</td>"			     
+			      /* result += "<td>"+String(selectRt(vo.rent_seq))+"</td>" */
+			      result += "</tr>"
+	   })
+	   result += "</table>"
+	   $("#list").html(result)
+}
+</script>
 </html>

@@ -40,11 +40,14 @@ public class HController {
 		return "umbList";
 	}
 	
+	@RequestMapping("/rent")
+	public String rent() {
+		return "rentList";
+	}
+	
 	@Autowired
 	private QnaService qnaService;
 	
-	@Autowired
-	private RentService rentService;
 	
 	@Autowired
     private CouponService couponService;
@@ -72,16 +75,6 @@ public class HController {
 		model.addAttribute("list",list);
 		
 		return "qnaList";
-	}
-	
-
-	@RequestMapping("/rent.do")
-	public String Rent(Model model) {
-		List<Rent> list = rentService.selectRent();
-		
-		model.addAttribute("list",list);
-		
-		return "rentList";
 	}
 	
 

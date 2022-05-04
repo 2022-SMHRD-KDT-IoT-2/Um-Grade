@@ -30,6 +30,18 @@ function umbList(){
 	})
 }
 
+function rentList(){
+	$.ajax({
+		url :  getContextPath()+"/rentList.do",
+		type : "get",
+		dataType : "json",
+		success : htmlView,
+		error : function(){
+			alert("error")
+		}
+	})
+}
+
 function goUp(umb_seq){
 	$.ajax({
 		url : getContextPath()+"/umbUpdate.do",
@@ -39,4 +51,14 @@ function goUp(umb_seq){
 		error : function(){alert("error")}
 	})	
 }
+
+/*function selectRt(rent_seq){
+	$.ajax({
+		url : getContextPath()+"/selectRt.do",
+		type : "get",
+		data : {"rent_seq":rent_seq},
+		success : rentList,
+		error : function(){alert("error")}
+	})	
+}*/
 

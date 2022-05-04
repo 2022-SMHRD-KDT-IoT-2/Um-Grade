@@ -2,4 +2,40 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.smhrd.mapper.RentMapper">
 	
+	<select id ="selectOneRent" parameterType = "int" resultType = "kr.smhrd.domain.Rent">
+		select * from t_rent where rent_seq = #{rent_seq}
+	</select>
+	
+	<select id ="selectRentTime" parameterType = "int" resultType = "int">
+		select timestampdiff(hour, rent_s_date, now()) from t_rent where rent_seq = #{rent_seq}
+	</select>
+	
+	<select id ="selectRentTime2" parameterType = "kr.smhrd.domain.Rent" resultType = "int">
+		select timestampdiff(hour, rent_s_date, #{rent_e_date}) from t_rent where rent_seq = #{rent_seq}
+	</select>
+	
+	<insert id="insertRent" parameterType="kr.smhrd.domain.Rent">
+		insert into t_rent(rent_id, umb_seq) values (#{rent_id}, #{umb_seq});
+	</insert>
+	
+	<update id="updateRentReturn" parameterType="int">
+		update t_rent set rent_e_date = now() where rent_seq = #{rent_seq}
+	</update>
+	
+	<update id="updateRentPayAmount" parameterType="kr.smhrd.domain.Rent">
+		update t_rent set pay_amount = #{pay_amount} where rent_seq = #{rent_seq}
+	</update>
+	
+	<update id="updateRentPayMethod" parameterType="kr.smhrd.domain.Rent">
+		update t_rent set pay_method = #{pay_method} where rent_seq = #{rent_seq}
+	</update>
+	
+	<update id="updateRentPayDone" parameterType="kr.smhrd.domain.Rent">
+		update t_rent set pay_done = #{pay_done} where rent_seq = #{rent_seq}
+	</update>
+	
+	<delete id="deleteRent" parameterType = "int">
+		delete from t_rent where rent_seq = #{rent_seq}
+	</delete>
+	
 </mapper>
