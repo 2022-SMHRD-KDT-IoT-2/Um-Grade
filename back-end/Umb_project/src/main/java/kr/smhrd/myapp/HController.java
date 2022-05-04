@@ -48,10 +48,8 @@ public class HController {
 	@Autowired
 	private QnaService qnaService;
 	
-	
 	@Autowired
     private CouponService couponService;
-	
 	
 	@Autowired
 	private UmbboxService umbboxService;
@@ -77,8 +75,6 @@ public class HController {
 		return "qnaList";
 	}
 	
-
-	
 	@RequestMapping("/coupon.do")
 	public String coupon(Model model) {
 		List<Coupon> list = couponService.selectCoupon();
@@ -87,8 +83,6 @@ public class HController {
 		
 		return "couponList";
 	}
-	
-	
 	
 	@RequestMapping("/ubox.do")
 	public String ubox(Model model) {
