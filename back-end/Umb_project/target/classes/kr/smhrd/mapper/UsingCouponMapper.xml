@@ -6,6 +6,6 @@
 	</select>
 	
 	<insert id="insertUC" parameterType="kr.smhrd.domain.UsingCoupon">
-		insert into t_using_coupon(uc_id, cp_seq) values (#{uc_id}, #{cp_seq});
+		insert into t_using_coupon(uc_id, cp_seq) values (#{uc_id}, #{cp_seq})
 	</insert>
 </mapper>

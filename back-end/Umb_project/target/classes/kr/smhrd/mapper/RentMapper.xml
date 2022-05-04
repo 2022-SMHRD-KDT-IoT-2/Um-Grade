@@ -15,7 +15,7 @@
 	</select>
 	
 	<insert id="insertRent" parameterType="kr.smhrd.domain.Rent">
-		insert into t_rent(rent_id, umb_seq) values (#{rent_id}, #{umb_seq});
+		insert into t_rent(rent_id, umb_seq) values (#{rent_id}, #{umb_seq})
 	</insert>
 	
 	<update id="updateRentReturn" parameterType="int">

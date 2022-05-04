@@ -7,7 +7,7 @@
 	</select>
 	
 	<insert id="insertUbox" parameterType="kr.smhrd.domain.Umbbox">
-		insert into t_umbbox(ubox_loc, ubox_latitude, ubox_longitude, ubox_qty, admin_id) values (#{ubox_loc}, #{ubox_latitude}, #{ubox_longitude}, #{ubox_qty}, #{admin_id});
+		insert into t_umbbox(ubox_loc, ubox_latitude, ubox_longitude, ubox_qty, admin_id) values (#{ubox_loc}, #{ubox_latitude}, #{ubox_longitude}, #{ubox_qty}, #{admin_id})
 	</insert>
 	
 	<update id="updateUboxStatus" parameterType="kr.smhrd.domain.Umbbox">

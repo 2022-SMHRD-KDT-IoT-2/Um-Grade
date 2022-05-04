@@ -7,7 +7,7 @@
 	</select>
 	
 	<insert id="insertUmb" parameterType="kr.smhrd.domain.Umbrella">
-		insert into t_umbrella(ubox_seq, umb_status, umb_broken, umb_rfid, umb_type) values (#{ubox_seq}, #{umb_status}, #{umb_broken}, #{umb_rfid}, #{umb_type});
+		insert into t_umbrella(ubox_seq, umb_status, umb_broken, umb_rfid, umb_type) values (#{ubox_seq}, #{umb_status}, #{umb_broken}, #{umb_rfid}, #{umb_type})
 	</insert>
 	
 	<update id="updateUmbStatus" parameterType="kr.smhrd.domain.Umbrella">

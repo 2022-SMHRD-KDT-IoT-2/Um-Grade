@@ -6,7 +6,7 @@
 	</select>
 	
 	<insert id="insertCoupon" parameterType="kr.smhrd.domain.Coupon">
-		insert into t_coupon(cp_no, cp_amount) values (#{cp_no}, #{cp_amount});
+		insert into t_coupon(cp_no, cp_amount) values (#{cp_no}, #{cp_amount})
 	</insert>
 	
 	<update id="updateCoupon" parameterType="kr.smhrd.domain.Coupon">
