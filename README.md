@@ -19,8 +19,8 @@
 
 # 🗂 개발환경
 - 개발 기간 : 2022.04.30 ~ 2022.05.24
-- 개발 언어 : Java, HTML, JS, Python
-- 개발 프레임워크 : Spring
+- 개발 언어 : Java, Python, HTML, JS, 
+- 개발 프레임워크 : Spring, 
 - 서버환경 : Tomcat 9.0
 - 협업 툴 : Git
 
