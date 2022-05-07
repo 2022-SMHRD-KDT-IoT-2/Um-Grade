@@ -50,7 +50,7 @@ public class UmbMainActivity extends AppCompatActivity  {
 
 
         int method = Request.Method.POST;
-        String server_url = "http://192.168.88.1:8081/myapp/Login";
+        String server_url = "http://220.71.97.131:8081/myapp/Login";
 
         request = new StringRequest(
                 method,
@@ -82,7 +82,7 @@ public class UmbMainActivity extends AppCompatActivity  {
                 intent.getStringExtra("response");
 
                 int method = Request.Method.POST;
-                String server_url = "http://192.168.88.1:8081/myapp/Login";
+                String server_url = "http://220.71.97.131:8081/myapp/Login";
 
                 request = new StringRequest(
                         method,
