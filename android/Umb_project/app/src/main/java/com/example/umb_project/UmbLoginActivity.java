@@ -15,6 +15,7 @@ import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
@@ -75,6 +76,7 @@ public class UmbLoginActivity extends AppCompatActivity {
                                         JSONObject jsonObject = new JSONObject(response);
                                         String user_id = jsonObject.getString("user_id");
                                         String user_pw = jsonObject.getString("user_pw");
+                                        String user_name = jsonObject.getString("user_name");
                                         String user_nick = jsonObject.getString("user_nick");
                                         String user_email = jsonObject.getString("user_email");
                                         String user_phone = jsonObject.getString("user_phone");
@@ -84,7 +86,7 @@ public class UmbLoginActivity extends AppCompatActivity {
                                         String user_status = jsonObject.getString("user_status");
                                         String user_point = jsonObject.getString("user_point");
 
-                                        User vo = new User(user_id, user_pw, user_nick, user_email, user_phone, user_joindate, user_addr, user_type, user_status, user_point);
+                                        User vo = new User(user_id, user_pw, user_name, user_nick, user_email, user_phone, user_joindate, user_addr, user_type, user_status, user_point);
 
                                         Log.v("dddddd", vo.toString());
                                         UserInfo.info = vo;
@@ -123,6 +125,26 @@ public class UmbLoginActivity extends AppCompatActivity {
                         return param;
                     }
                 };
+
+
+                request.setRetryPolicy(new RetryPolicy() {
+                    @Override
+                    public int getCurrentTimeout() {
+                        return 50000;
+                    }
+
+                    @Override
+                    public int getCurrentRetryCount() {
+                        return 50000;
+                    }
+
+                    @Override
+                    public void retry(VolleyError error) throws VolleyError {
+
+                    }
+                });
+
+
                 queue.add(request);
             }
         });

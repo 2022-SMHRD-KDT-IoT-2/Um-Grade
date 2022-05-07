@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class UmbJoinActivity extends AppCompatActivity {
 
-    EditText edtJoinId, edtJoinPw, edtJoinNick, edtJoinEmail, edtJoinPhone, edtJoinAddr;
+    EditText edtJoinId, edtJoinPw,edtJoinName, edtJoinNick, edtJoinEmail, edtJoinPhone, edtJoinAddr;
     Button btnSuccess;
 
     RequestQueue queue;
@@ -35,8 +35,9 @@ public class UmbJoinActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_umb_join);
 
-        edtJoinId = findViewById(R.id.edtJoinId);
-        edtJoinPw = findViewById(R.id.edtJoinPw);
+        edtJoinId = findViewById(R.id.edtJoinPw);
+        edtJoinPw = findViewById(R.id.edtJoinName);
+        edtJoinName = findViewById(R.id.edtJoinName);
         edtJoinNick = findViewById(R.id.edtJoinNick);
         edtJoinEmail = findViewById(R.id.edtJoinEmail);
         edtJoinPhone = findViewById(R.id.edtJoinPhone);
@@ -85,6 +86,7 @@ public class UmbJoinActivity extends AppCompatActivity {
 
                         param.put("user_id", edtJoinId.getText().toString());
                         param.put("user_pw", edtJoinPw.getText().toString());
+                        param.put("user_name", edtJoinName.getText().toString());
                         param.put("user_nick", edtJoinNick.getText().toString());
                         param.put("user_email", edtJoinEmail.getText().toString());
                         param.put("user_phone", edtJoinPhone.getText().toString());

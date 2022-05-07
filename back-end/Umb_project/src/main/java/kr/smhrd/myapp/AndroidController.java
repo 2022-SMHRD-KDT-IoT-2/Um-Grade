@@ -20,6 +20,7 @@ public class AndroidController {
 
 		System.out.println(user.getUser_id());
 		System.out.println(user.getUser_pw());
+		System.out.println(user.getUser_name());
 		System.out.println(user.getUser_nick());
 		System.out.println(user.getUser_email());
 		System.out.println(user.getUser_phone());

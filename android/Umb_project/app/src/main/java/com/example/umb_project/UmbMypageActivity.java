@@ -13,7 +13,7 @@ import com.example.umb_project.vo.User;
 
 public class UmbMypageActivity extends AppCompatActivity {
 
-    TextView infoId, infoNick, infoEmail, infoPhone,
+    TextView infoId, infoName, infoNick, infoEmail, infoPhone,
             infoJoindate, infoAddr, infoType, infoStatus, infoPoint;
 
     RequestQueue queue;
@@ -26,6 +26,7 @@ public class UmbMypageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_umb_mypage);
 
         infoId = findViewById(R.id.infoId);
+        infoName = findViewById(R.id.infoName);
         infoNick = findViewById(R.id.infoNick);
         infoEmail = findViewById(R.id.infoEmail);
         infoPhone = findViewById(R.id.infoPhone);
@@ -40,6 +41,7 @@ public class UmbMypageActivity extends AppCompatActivity {
         User user = UserInfo.info;
 
         infoId.setText(user.getUser_id());
+        infoName.setText(user.getUser_name());
         infoNick.setText(user.getUser_nick());
         infoEmail.setText(user.getUser_email());
         infoPhone.setText(user.getUser_phone());

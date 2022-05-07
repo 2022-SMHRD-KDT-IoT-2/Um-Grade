@@ -61,16 +61,16 @@
         android:ems="10"
         android:hint="@string/edtJoinNick_hint"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/edtJoinPw"
-        app:layout_constraintStart_toStartOf="@+id/edtJoinPw"
-        app:layout_constraintTop_toBottomOf="@+id/edtJoinPw" />
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinName"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinName"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinName" />
 
     <EditText
-        android:id="@+id/edtJoinPw"
+        android:id="@+id/edtJoinName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/edtJoinPw_hint"
+        android:hint="@string/edtJoinName_hint"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,15 +80,26 @@
         app:layout_constraintVertical_bias="0.329" />
 
     <EditText
+        android:id="@+id/edtJoinPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edtJoinPw_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtJoinName"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinName"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinId" />
+
+    <EditText
         android:id="@+id/edtJoinId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="@string/edtJoinId_hint"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtJoinPw"
-        app:layout_constraintEnd_toEndOf="@+id/edtJoinPw"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtJoinPw" />
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinName"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinName"
+        tools:layout_editor_absoluteY="115dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

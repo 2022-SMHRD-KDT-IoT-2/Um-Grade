@@ -1,13 +1,14 @@
 package com.example.umb_project;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -18,13 +19,16 @@ import com.android.volley.toolbox.Volley;
 import com.example.umb_project.info.UserInfo;
 import com.example.umb_project.vo.User;
 
-public class UmbMainActivity extends AppCompatActivity {
+import net.daum.mf.map.api.MapView;
+
+public class UmbMainActivity extends AppCompatActivity  {
 
     TextView tvUser1, tvUserPoint2;
     Button btnMypage, btnLogout;
-
+    //MapView mapView;
     RequestQueue queue;
     StringRequest request;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,13 @@ public class UmbMainActivity extends AppCompatActivity {
         btnLogout = findViewById(R.id.btnLogout);
 
         queue = Volley.newRequestQueue(UmbMainActivity.this);
+
+        //MapView mapView = new MapView(this);
+
+        //ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.mapView);
+        //mapViewContainer.addView(mapView);
+
+
 
         int method = Request.Method.POST;
         String server_url = "http://192.168.88.1:8081/myapp/Login";
@@ -100,4 +111,5 @@ public class UmbMainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

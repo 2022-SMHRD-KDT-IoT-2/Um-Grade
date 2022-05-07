@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.umb_project" >
-
+    package="com.example.umb_project">
     <!-- 인터넷 권한 설정 -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 지도 API 권한 설정 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Umb_project"
         android:usesCleartextTraffic="true">
+
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="875e09f7c33e96c4a8a4b4701b217c75" />
+
         <activity
             android:name=".UmbMainActivity"
             android:exported="false" />
@@ -25,13 +29,15 @@
             android:exported="false" />
         <activity
             android:name=".UmbLoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
