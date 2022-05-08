@@ -51,7 +51,7 @@ public class UmbJoinActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 int method = Request.Method.POST;
-                String server_url = "http://192.168.88.1:8081/myapp/Join";
+                String server_url = "http://192.168.137.1:8081/myapp/Join";
 
                 request = new StringRequest(
                         method,

@@ -32,7 +32,7 @@ android {
 
             include 'x86', 'x86_64', 'armeabi-v7a', 'armeabi'
 
-            universalApk false
+            universalApk true
 
         }
 
@@ -57,7 +57,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation files('libs/libDaumMapAndroid.jar')
-    implementation files('C:/Users/smhrd/Desktop/Um_project/android/Umb_project/app/libs/llibDaumMapEngineApi.jar')
+    implementation files('libs/llibDaumMapEngineApi.jar')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

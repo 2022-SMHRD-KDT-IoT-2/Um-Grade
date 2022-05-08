@@ -57,11 +57,12 @@
         android:id="@+id/edtJoinNick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="@string/edtJoinNick_hint"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/edtJoinName"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edtJoinName"
         app:layout_constraintTop_toBottomOf="@+id/edtJoinName" />
 
@@ -90,16 +91,21 @@
         app:layout_constraintEnd_toEndOf="@+id/edtJoinName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edtJoinName"
-        app:layout_constraintTop_toBottomOf="@+id/edtJoinId" />
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinId"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/edtJoinId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="@string/edtJoinId_hint"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/edtJoinName"
-        app:layout_constraintStart_toStartOf="@+id/edtJoinName"
-        tools:layout_editor_absoluteY="115dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtJoinName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
 </androidx.constraintlayout.widget.ConstraintLayout>
