@@ -55,7 +55,9 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
         queue = Volley.newRequestQueue(UmbMainActivity.this);
 
         int method = Request.Method.POST;
+
         String server_url = "http://172.30.1.55:8081/myapp/Login";
+
 
         request = new StringRequest(
                 method,
@@ -91,6 +93,7 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
                 intent.getStringExtra("response");
 
                 int method = Request.Method.POST;
+
                 String server_url = "http://172.30.1.55:8081/myapp/Login";
 
                 request = new StringRequest(
@@ -120,19 +123,20 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
             }
         });
     }
+
     //카카오 지도 API 사용하기위해 디버그 토큰 발급
-    private void getAppKeyHash(){
-        try{
+    private void getAppKeyHash() {
+        try {
             PackageInfo info = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
-            for(Signature signature : info.signatures){
+            for (Signature signature : info.signatures) {
                 MessageDigest md;
                 md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());
-                String something = new String(Base64.encode(md.digest(),0));
+                String something = new String(Base64.encode(md.digest(), 0));
                 Log.d("Hash Key", something);
             }
-        }catch (Exception e){
-            Log.e("name not found",e.toString());
+        } catch (Exception e) {
+            Log.e("name not found", e.toString());
         }
     }
 
@@ -140,7 +144,7 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
 
         int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
 
-        if(permissionCheck == PackageManager.PERMISSION_DENIED){ //위치 권한 확인
+        if (permissionCheck == PackageManager.PERMISSION_DENIED) { //위치 권한 확인
 
             //위치 권한 요청
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 0);
