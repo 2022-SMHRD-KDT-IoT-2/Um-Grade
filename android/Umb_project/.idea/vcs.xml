@@ -2,6 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+<<<<<<< HEAD:front-end/umgrade/.idea/vcs.xml
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+=======
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+>>>>>>> b2a78b6b62cde453780ad848d9e1df0495a923df:android/Umb_project/.idea/vcs.xml
   </component>
 </project>
