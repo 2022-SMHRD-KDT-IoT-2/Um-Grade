@@ -101,24 +101,24 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\smhrd\.gradle\cach
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:13:9-45
 	android:usesCleartextTraffic
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:14:9-44
-activity#com.example.umgrade.LoginActivity
+activity#com.example.umgrade.JoinActivity
 ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:16:13-42
+		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:16:13-41
 activity#com.example.umgrade.MainActivity
 ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:19:13-41
-activity#com.example.umgrade.JoinActivity
+activity#com.example.umgrade.LoginActivity
 ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:21:9-29:20
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:22:13-41
+		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:22:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN

@@ -3,10 +3,13 @@ package com.example.umgrade;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -24,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
 
     Button btnLogin;
     EditText edtLoginId, edtLoginPw;
+    TextView tvJoin;
 
     RequestQueue queue;
     StringRequest request;
@@ -37,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         edtLoginId = findViewById(R.id.edtLoginId);
         edtLoginPw = findViewById(R.id.edtLoginPw);
+        tvJoin = findViewById(R.id.tvJoin);
 
         queue = Volley.newRequestQueue(LoginActivity.this);
 
@@ -44,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
+                // 서버 url
                 String server_url = "";
 
                 request = new StringRequest(
@@ -80,5 +86,14 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        // 회원가입 클릭 시 화면전환
+        tvJoin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, JoinActivity.class);
+                
+                startActivity(intent);
+            }
+        });
     }
 }
