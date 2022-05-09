@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,49 +16,134 @@
     <LinearLayout
         style="@style/linearParent"
         android:layout_gravity="center"
+        android:background="#FFFFFF"
         android:padding="@dimen/loginViewsMargin"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            style="@style/headerTextPrimary"
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/umbrella" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="@dimen/loginViewsMargin"
-            android:text="register" />
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtJoinId"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="@string/edtJoinId"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/btnIdCheck"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#2196F3"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/btnIdCheck"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
 
         <EditText
+            android:id="@+id/edtJoinPw"
             style="@style/modifiedEditText"
-            android:hint="Name"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinPw"
             android:inputType="text"
             android:maxLines="1" />
 
         <EditText
+            android:id="@+id/edtJoinPwCheck"
             style="@style/modifiedEditText"
-            android:hint="Mobile Number"
-            android:inputType="text"
-            android:maxLines="1" />
-
-        <EditText
-            style="@style/modifiedEditText"
-            android:hint="@string/edtLoginId"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinPwCheck"
             android:inputType="textEmailAddress"
             android:maxLines="1" />
 
         <EditText
+            android:id="@+id/edtJoinEmail"
             style="@style/modifiedEditText"
-            android:hint="@string/edtLoginPw"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinEmail"
             android:inputType="textPassword"
             android:maxLines="1" />
 
-        <Button
-            style="@style/loginButton"
-            android:layout_gravity="center" />
+        <EditText
+            android:id="@+id/edtJoinName"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinName"
+            android:inputType="textPassword"
+            android:maxLines="1" />
 
-        <TextView
-            style="@style/parent"
+        <EditText
+            android:id="@+id/edtJoinPhone"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinPhone"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edtJoinAddr"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinAddr"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <CheckBox
+            android:id="@+id/tvTerms"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tvTerms"
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/tvPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/tvPersonal"
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/tvMarketing"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/tvMarketing"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnJoin"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
             android:layout_marginTop="@dimen/loginViewsMargin"
-            android:text="signup_login_hint"
-            android:textAlignment="center"
-            android:textColor="@color/primaryTextColor"
-            android:textStyle="bold" />
+            android:backgroundTint="#2196F3"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btnJoin"
+            app:cornerRadius="5dp" />
 
     </LinearLayout>
 

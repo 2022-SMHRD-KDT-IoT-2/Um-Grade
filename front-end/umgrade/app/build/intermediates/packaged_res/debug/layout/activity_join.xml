@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:theme="@style/loginParent"
+    tools:context=".JoinActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        style="@style/parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            style="@style/parent"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_alignParentTop="true"
+                android:background="#FFFFFF"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvJoinTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="#00FFFFFF"
+                        android:text="@string/tvJoinTitle"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        style="@style/parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="100dp"
+                android:background="#00FFFFFF"
+                android:orientation="vertical">
+
+
+                <include
+                    layout="@layout/layout_register"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

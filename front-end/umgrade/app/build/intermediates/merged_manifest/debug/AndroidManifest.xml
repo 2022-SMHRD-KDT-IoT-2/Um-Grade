@@ -7,7 +7,6 @@
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="32" />
-
     <!-- 인터넷 권한 설정 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -23,10 +22,13 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.umgrade.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.umgrade.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.LoginActivity"
+            android:name="com.example.umgrade.JoinActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

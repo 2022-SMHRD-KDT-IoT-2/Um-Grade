@@ -24,19 +24,18 @@
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:background="#FFFFFF"
-            android:src="@drawable/umbrella"
-            />
+            android:src="@drawable/umbrella" />
 
         <EditText
             android:id="@+id/edtLoginId"
             style="@style/modifiedEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:ems="10"
             android:hint="@string/edtLoginId"
@@ -46,7 +45,7 @@
             android:id="@+id/edtLoginPw"
             style="@style/modifiedEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:ems="10"
             android:hint="@string/edtLoginPw"
@@ -66,7 +65,6 @@
             android:id="@+id/btnKakaoLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/loginViewsMargin"
             android:backgroundTint="#FAE100"
             android:text="@string/btnKakaoLogin"
             android:textColor="#4C2626"
