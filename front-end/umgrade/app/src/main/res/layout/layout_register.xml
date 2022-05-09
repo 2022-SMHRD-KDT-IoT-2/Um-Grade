@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor"
+    android:elevation="5dp"
+    android:theme="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="register" />
+
+        <EditText
+            style="@style/modifiedEditText"
+            android:hint="Name"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            style="@style/modifiedEditText"
+            android:hint="Mobile Number"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            style="@style/modifiedEditText"
+            android:hint="@string/edtLoginId"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
+            style="@style/modifiedEditText"
+            android:hint="@string/edtLoginPw"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center" />
+
+        <TextView
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="signup_login_hint"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

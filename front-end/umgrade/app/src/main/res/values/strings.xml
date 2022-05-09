@@ -1,16 +1,10 @@
-<resources>
-    <string name="app_name">umgrade</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">UM-CYCLE</string>
 
-    <!-- activity_loginl.xml -->
-    <string name="tvLogin">Login</string>
-    <string name="edtLoginId">ID 입력</string>
-    <string name="edtLoginPw">PW 입력</string>
-    <string name="btnLogin">로그인하기</string>
-
-    <string name="register">REGISTER</string>
-    <string name="login_email_hint">Email</string>
-    <string name="login_password_hint">Password</string>
-    <string name="signup_login_hint">Already have an account? Sign In</string>
-    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
-
+    <!-- layout_loginl.xml -->
+    <string name="edtLoginId">ID를 입력하세요</string>
+    <string name="edtLoginPw">PW를 입력하세요</string>
+    <string name="btnLogin">로그인</string>
+    <string name="tvJoin">회원가입하기</string>
+    <string name="btnKakaoLogin">카카오로 시작하기</string>
 </resources>
