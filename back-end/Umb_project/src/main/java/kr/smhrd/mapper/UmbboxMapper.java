@@ -15,11 +15,14 @@ public interface UmbboxMapper {
 	// 보관함 개별 정보 조회
 	public Umbbox selectOneUbox(int ubox_seq);
 	
+	// 보관함 상태 정보 조회
+	public String selectUboxStatus(int ubox_seq);
+	
 	// 보관함 추가
 	public void insertUbox(Umbbox vo);
 	
 	// 보관함 상태 수정
-	public void updateUboxStatus(Umbbox vo);
+	public void updateUboxStatus(String status);
 
 	// 보관함 세부내용(설치장소명, 위도, 경도, 수량) 일괄 수정
 	public void updateUbox(Umbbox vo);

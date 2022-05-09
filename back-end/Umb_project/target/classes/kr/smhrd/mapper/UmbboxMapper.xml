@@ -6,12 +6,16 @@
 		select * from t_umbbox where ubox_seq = #{ubox_seq}
 	</select>
 	
+	<select id="selectUboxStatus" parameterType = "int" resultType = "String">
+		select ubox_status from t_umbbox where ubox_seq = #{ubox_seq}
+	</select>
+	
 	<insert id="insertUbox" parameterType="kr.smhrd.domain.Umbbox">
 		insert into t_umbbox(ubox_loc, ubox_latitude, ubox_longitude, ubox_qty, admin_id) values (#{ubox_loc}, #{ubox_latitude}, #{ubox_longitude}, #{ubox_qty}, #{admin_id})
 	</insert>
 	
-	<update id="updateUboxStatus" parameterType="kr.smhrd.domain.Umbbox">
-		update t_umbbox set ubox_status = #{ubox_status} where ubox_seq = #{ubox_seq}
+	<update id="updateUboxStatus" parameterType="String">
+		update t_umbbox set ubox_status = #{ubox_status}
 	</update>
 	
 	<update id="updateUbox" parameterType="kr.smhrd.domain.Umbbox">
