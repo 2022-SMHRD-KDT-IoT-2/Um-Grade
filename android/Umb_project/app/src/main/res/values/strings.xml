@@ -17,7 +17,7 @@
     <!-- Umb_Join.xml -->
     <string name="edtJoinId_hint">아이디를 입력하시오</string>
     <string name="edtJoinPw_hint">비밀번호를 입력하시오</string>
-    <string name = "edtJoinName_hint">이름을 입력하시오</string>
+    <string name="edtJoinName_hint">이름을 입력하시오</string>
     <string name="edtJoinNick_hint">닉네임을 입력하시오</string>
     <string name="edtJoinEmail_hint">이메일을 입력하시오</string>
     <string name="edtJoinPhone_hint">전화번호를 입력하시오</string>

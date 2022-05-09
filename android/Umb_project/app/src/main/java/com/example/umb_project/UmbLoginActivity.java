@@ -61,7 +61,9 @@ public class UmbLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
-                String server_url = "http://192.168.88.1:8081/myapp/Login";
+
+                String server_url = "http://172.30.1.11:8081/myapp/Login";
+
 
                 request = new StringRequest(
                         method,
@@ -69,7 +71,6 @@ public class UmbLoginActivity extends AppCompatActivity {
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
-
 
                                 if (response.length() > 1) {
                                     try {
