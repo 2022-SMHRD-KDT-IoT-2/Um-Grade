@@ -99,5 +99,17 @@
         app:layout_constraintGuide_percent="0.5"
         app:layout_constraintStart_toEndOf="@+id/guideline5" />
 
+    <Button
+        android:id="@+id/scanQR"
+        android:layout_width="102dp"
+        android:layout_height="39dp"
+        android:text="QR scan"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/btnMypage"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

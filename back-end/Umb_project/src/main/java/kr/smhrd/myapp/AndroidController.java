@@ -37,7 +37,17 @@ public class AndroidController {
 		User info = service.userLogin(user);
 
 		return info;
-
 	}
+	
+	// 우산대여요청
+		@RequestMapping(value = "/Rent", method = RequestMethod.POST)
+		public User umbRent(User user) {
+			System.out.println("로그인 접근 감지");
+			User info = service.userLogin(user);
+
+			return info;
+		}
+	
+	
 
 }

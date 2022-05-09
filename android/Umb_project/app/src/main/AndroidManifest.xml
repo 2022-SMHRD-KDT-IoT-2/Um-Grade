@@ -2,11 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.umb_project">
     <!-- 인터넷 권한 설정 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 지도 API 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 지도 API 권한 설정 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -16,9 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Umb_project"
         android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
         >
+        <activity
+            android:name=".UmbQrActivity"
+            android:exported="false" />
 
-        <meta-data android:name="com.kakao.sdk.AppKey" android:value="49ef1afb711e53c2c92c917ccb2d1f7a" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="49ef1afb711e53c2c92c917ccb2d1f7a" />
 
         <activity
             android:name=".UmbMainActivity"
@@ -38,8 +42,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

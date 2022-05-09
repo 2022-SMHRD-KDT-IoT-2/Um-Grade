@@ -36,10 +36,12 @@ import java.security.MessageDigest;
 
 public class UmbMainActivity extends AppCompatActivity implements MapView.MapViewEventListener, MapView.POIItemEventListener {
 
+    private Button scanQRBtn;
     TextView tvUser1, tvUserPoint2;
     Button btnMypage, btnLogout;
     RequestQueue queue;
     StringRequest request;
+
 
 
     @Override
@@ -54,9 +56,19 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
 
         queue = Volley.newRequestQueue(UmbMainActivity.this);
 
+        scanQRBtn = (Button) findViewById(R.id.scanQR);
+
+        scanQRBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UmbMainActivity.this, UmbQrActivity.class);
+                startActivity(intent);
+            }
+        });
+
         int method = Request.Method.POST;
 
-        String server_url = "http://172.30.1.55:8081/myapp/Login";
+        String server_url = "http://220.71.97.131:8081/myapp/Login";
 
 
         request = new StringRequest(
@@ -94,7 +106,7 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
 
                 int method = Request.Method.POST;
 
-                String server_url = "http://172.30.1.55:8081/myapp/Login";
+                String server_url = "http://220.71.97.131:8081/myapp/Login";
 
                 request = new StringRequest(
                         method,
