@@ -61,8 +61,8 @@ public class UmbLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
-                Log.d("onclick","onclick");
-                String server_url = "http://220.71.97.131:8081/myapp/Login";
+
+                String server_url = "http://172.30.1.11:8081/myapp/Login";
 
 
                 request = new StringRequest(
