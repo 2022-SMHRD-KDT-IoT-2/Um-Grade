@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.UsingCouponMapper">
+	<select id ="selectOneUC" parameterType = "int" resultType = "kr.smhrd.domain.UsingCoupon">
+		select * from t_using_coupon where uc_seq = #{uc_seq}
+	</select>
+	
+	<insert id="insertUC" parameterType="kr.smhrd.domain.UsingCoupon">
+		insert into t_using_coupon(uc_id, cp_seq) values (#{uc_id}, #{cp_seq})
+	</insert>
+</mapper>

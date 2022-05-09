@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.BoardMapper">
+	<select id ="selectOneBoard" parameterType = "int" resultType = "kr.smhrd.domain.Board">
+		select * from t_board where article_seq = #{article_seq}
+	</select>
+	
+	<insert id="insertBoard" parameterType="kr.smhrd.domain.Board">
+		insert into t_board(article_title, article_content, article_file, article_id) values (#{article_title}, #{article_content}, #{article_file}, #{article_id})
+	</insert>
+	
+	<update id="updateBoardCnt" parameterType="kr.smhrd.domain.Board">
+		update t_board set article_cnt = article_cnt + 1 where article_seq = #{article_seq}
+	</update>
+	
+	<update id="updateBoard" parameterType="kr.smhrd.domain.Board">
+		update t_board set article_title = #{article_title}, article_content = #{article_content}, article_file = #{article_file}, where article_seq = #{article_seq}
+	</update>
+	
+	<delete id="deleteBoard" parameterType = "int">
+		delete from t_board where article_seq = #{article_seq}
+	</delete>
+</mapper>

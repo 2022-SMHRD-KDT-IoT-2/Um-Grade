@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.QnaMapper">
+	<select id ="selectOneQna" parameterType = "int" resultType = "kr.smhrd.domain.Qna">
+		select * from t_qna where qna_seq = #{qna_seq}
+	</select>
+	
+	<insert id="insertQna" parameterType="kr.smhrd.domain.Qna">
+		insert into t_qna(qna_title, qna_content, qna_file, qna_id) values (#{qna_title}, #{qna_content}, #{qna_file}, #{qna_id})
+	</insert>
+	
+	<update id="updateQna" parameterType="kr.smhrd.domain.Qna">
+		update t_board set qna_title = #{qna_title}, qna_content = #{qna_content}, qna_file = #{qna_file}, where qna_seq = #{qna_seq}
+	</update>
+	
+	<delete id="deleteQna" parameterType = "int">
+		delete from t_board where qna_seq = #{qna_seq}
+	</delete>
+</mapper>

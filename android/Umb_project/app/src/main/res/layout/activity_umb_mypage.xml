@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    tools:context=".UmbMypageActivity">
+
+    <TextView
+        android:id="@+id/userPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userPoint_text"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/userStatus"
+        app:layout_constraintTop_toBottomOf="@+id/userStatus" />
+
+    <TextView
+        android:id="@+id/userStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userStatus_text"
+        app:layout_constraintBottom_toTopOf="@+id/userPoint"
+        app:layout_constraintStart_toStartOf="@+id/userType"
+        app:layout_constraintTop_toBottomOf="@+id/userType" />
+
+    <TextView
+        android:id="@+id/userNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userNick_text"
+        app:layout_constraintBottom_toTopOf="@+id/userEmail"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/userJoindate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userJoindate_text"
+        app:layout_constraintBottom_toTopOf="@+id/userAddr"
+        app:layout_constraintStart_toStartOf="@+id/userPhone"
+        app:layout_constraintTop_toBottomOf="@+id/userPhone" />
+
+    <TextView
+        android:id="@+id/userType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userType_text"
+        app:layout_constraintBottom_toTopOf="@+id/userStatus"
+        app:layout_constraintStart_toStartOf="@+id/userAddr"
+        app:layout_constraintTop_toBottomOf="@+id/userAddr" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userName_text"
+        app:layout_constraintBottom_toTopOf="@+id/userNick"
+        app:layout_constraintStart_toStartOf="@+id/userId"
+        app:layout_constraintTop_toBottomOf="@+id/userId" />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userEmail_text"
+        app:layout_constraintBottom_toTopOf="@+id/userPhone"
+        app:layout_constraintStart_toStartOf="@+id/userNick"
+        app:layout_constraintTop_toBottomOf="@+id/userNick" />
+
+    <TextView
+        android:id="@+id/userAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userAddr_text"
+        app:layout_constraintBottom_toTopOf="@+id/userType"
+        app:layout_constraintStart_toStartOf="@+id/userJoindate"
+        app:layout_constraintTop_toBottomOf="@+id/userJoindate" />
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userId_text"
+        app:layout_constraintBottom_toTopOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/tvMypage"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/userPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userPhone_text"
+        app:layout_constraintBottom_toTopOf="@+id/userJoindate"
+        app:layout_constraintStart_toStartOf="@+id/userEmail"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+
+    <TextView
+        android:id="@+id/infoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userId"
+        app:layout_constraintStart_toEndOf="@+id/userId"
+        app:layout_constraintTop_toTopOf="@+id/userId" />
+
+    <TextView
+        android:id="@+id/infoNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userNick"
+        app:layout_constraintStart_toEndOf="@+id/userNick"
+        app:layout_constraintTop_toTopOf="@+id/userNick" />
+
+    <TextView
+        android:id="@+id/infoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userEmail"
+        app:layout_constraintStart_toEndOf="@+id/userEmail"
+        app:layout_constraintTop_toTopOf="@+id/userEmail" />
+
+    <TextView
+        android:id="@+id/infoPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userPhone"
+        app:layout_constraintStart_toEndOf="@+id/userPhone"
+        app:layout_constraintTop_toTopOf="@+id/userPhone" />
+
+    <TextView
+        android:id="@+id/infoJoindate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userJoindate"
+        app:layout_constraintStart_toEndOf="@+id/userJoindate"
+        app:layout_constraintTop_toTopOf="@+id/userJoindate" />
+
+    <TextView
+        android:id="@+id/infoAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userAddr"
+        app:layout_constraintStart_toEndOf="@+id/userAddr"
+        app:layout_constraintTop_toTopOf="@+id/userAddr" />
+
+    <TextView
+        android:id="@+id/infoType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userType"
+        app:layout_constraintStart_toEndOf="@+id/userType"
+        app:layout_constraintTop_toTopOf="@+id/userType" />
+
+    <TextView
+        android:id="@+id/infoStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userStatus"
+        app:layout_constraintStart_toEndOf="@+id/userStatus"
+        app:layout_constraintTop_toTopOf="@+id/userStatus" />
+
+    <TextView
+        android:id="@+id/infoPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userPoint"
+        app:layout_constraintStart_toEndOf="@+id/userPoint"
+        app:layout_constraintTop_toTopOf="@+id/userPoint" />
+
+    <TextView
+        android:id="@+id/tvMypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvMypage_text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/infoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/userName"
+        app:layout_constraintStart_toEndOf="@+id/userName"
+        app:layout_constraintTop_toTopOf="@+id/userName" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

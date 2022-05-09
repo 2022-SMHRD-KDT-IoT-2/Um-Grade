@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.UmbboxMapper">
+	
+	<select id ="selectOneUbox" parameterType = "int" resultType = "kr.smhrd.domain.Umbbox">
+		select * from t_umbbox where ubox_seq = #{ubox_seq}
+	</select>
+	
+	<insert id="insertUbox" parameterType="kr.smhrd.domain.Umbbox">
+		insert into t_umbbox(ubox_loc, ubox_latitude, ubox_longitude, ubox_qty, admin_id) values (#{ubox_loc}, #{ubox_latitude}, #{ubox_longitude}, #{ubox_qty}, #{admin_id})
+	</insert>
+	
+	<update id="updateUboxStatus" parameterType="kr.smhrd.domain.Umbbox">
+		update t_umbbox set ubox_status = #{ubox_status} where ubox_seq = #{ubox_seq}
+	</update>
+	
+	<update id="updateUbox" parameterType="kr.smhrd.domain.Umbbox">
+		update t_umbbox set ubox_loc = #{ubox_loc}, ubox_latitude = #{ubox_latitude}, ubox_longitude = #{ubox_longitude}, ubox_qty = #{ubox_qty} where ubox_seq = #{ubox_seq}
+	</update>
+	
+	<update id="updateUboxAdmin" parameterType="kr.smhrd.domain.Umbbox">
+		update t_umbbox set admin_id = #{admin_id} where ubox_seq = #{ubox_seq}
+	</update>
+	
+	<update id="updateUboxCheck" parameterType="int">
+		update t_umbbox set ubox_check = now() where ubox_seq = #{ubox_seq}
+	</update>
+	
+	<delete id="deleteUbox" parameterType = "int">
+		delete from t_umbbox where ubox_seq = #{ubox_seq}
+	</delete>
+	
+</mapper>

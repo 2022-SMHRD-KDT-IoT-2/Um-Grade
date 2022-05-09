@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.CommentMapper">
+	<select id ="selectListCmt" parameterType = "int" resultType="kr.smhrd.domain.Comment">
+		select * from t_comment where article_seq = #{article_seq}
+	</select>
+	
+	<insert id="insertCmt" parameterType="kr.smhrd.domain.Comment">
+		insert into t_comment(article_seq, cmt_content, cmt_id) values (#{article_seq}, #{article_content}, #{cmt_content}, #{cmt_id})
+	</insert>
+	
+	<update id="updateCmtLikes" parameterType="int">
+		update t_comment set cmt_likes = cmt_likes + 1 where cmt_seq = #{cmt_seq}
+	</update>
+	
+	<update id="updateCmt" parameterType="kr.smhrd.domain.Comment">
+		update t_comment set cmt_content = #{cmt_content} where cmt_seq = #{cmt_seq}
+	</update>
+	
+	<delete id="deleteCmt" parameterType = "int">
+		delete from t_board where article_seq = #{article_seq}
+	</delete>
+</mapper>

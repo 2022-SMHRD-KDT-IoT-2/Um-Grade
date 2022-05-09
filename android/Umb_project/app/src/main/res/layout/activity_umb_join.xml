@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UmbJoinActivity">
+
+    <EditText
+        android:id="@+id/edtJoinEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/edtJoinEmail_hint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinNick"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinNick"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinNick" />
+
+    <EditText
+        android:id="@+id/edtJoinAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/edtJoinAddr_hint"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinPhone"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinPhone" />
+
+    <EditText
+        android:id="@+id/edtJoinPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/edtJoinPhone_hint"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinEmail" />
+
+    <Button
+        android:id="@+id/btnSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/btnSuccess_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinAddr" />
+
+    <EditText
+        android:id="@+id/edtJoinNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/edtJoinNick_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinName"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinName" />
+
+    <EditText
+        android:id="@+id/edtJoinName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edtJoinName_hint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <EditText
+        android:id="@+id/edtJoinPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edtJoinPw_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtJoinName"
+        app:layout_constraintEnd_toEndOf="@+id/edtJoinName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtJoinName"
+        app:layout_constraintTop_toBottomOf="@+id/edtJoinId"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/edtJoinId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/edtJoinId_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtJoinName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
+</androidx.constraintlayout.widget.ConstraintLayout>

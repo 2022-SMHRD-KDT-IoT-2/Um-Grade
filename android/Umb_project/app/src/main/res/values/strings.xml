@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Umb_project</string>
+
+    <!-- Umb_Main.xml -->
+    <string name="tvUser2_text">님</string>
+    <string name="tvPoint1_text">포인트:</string>
+    <string name="btnMypage_text">마이페이지</string>
+    <string name="btnLogout_text">로그아웃</string>
+
+    <!-- Umb_Login.xml -->
+    <string name="tvText_text">Um-Cycle</string>
+    <string name="edtId_hint">아이디</string>
+    <string name="edtPw_hint">비밀번호</string>
+    <string name="btnJoin_text">회원가입</string>
+    <string name="btnLogin_text">로그인</string>
+
+    <!-- Umb_Join.xml -->
+    <string name="edtJoinId_hint">아이디를 입력하시오</string>
+    <string name="edtJoinPw_hint">비밀번호를 입력하시오</string>
+    <string name = "edtJoinName_hint">이름을 입력하시오</string>
+    <string name="edtJoinNick_hint">닉네임을 입력하시오</string>
+    <string name="edtJoinEmail_hint">이메일을 입력하시오</string>
+    <string name="edtJoinPhone_hint">전화번호를 입력하시오</string>
+    <string name="edtJoinAddr_hint">주소를 입력하시오</string>
+    <string name="btnSuccess_text">회원가입</string>
+
+    <!-- Umb_Mypage.xml -->
+    <string name="tvMypage_text">마이페이지</string>
+    <string name="userId_text">아이디</string>
+    <string name="userName_text">이름</string>
+    <string name="userPw_text">패스워드</string>
+    <string name="userNick_text">닉네임</string>
+    <string name="userEmail_text">이메일</string>
+    <string name="userPhone_text">전화번호</string>
+    <string name="userJoindate_text">가입일자</string>
+    <string name="userAddr_text">주소</string>
+    <string name="userType_text">유형</string>
+    <string name="userStatus_text">상태</string>
+    <string name="userPoint_text">포인트</string>
+
+
+</resources>

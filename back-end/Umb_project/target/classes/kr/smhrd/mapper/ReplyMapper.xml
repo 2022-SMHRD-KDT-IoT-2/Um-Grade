@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.ReplyMapper">
+	<select id ="selectListReply" parameterType = "int" resultType="kr.smhrd.domain.Reply">
+		select * from t_reply where qna_seq = #{qna_seq}
+	</select>
+	
+	<insert id="insertReply" parameterType="kr.smhrd.domain.Reply">
+		insert into t_reply(qna_seq, reply_content, reply_file, reply_id) values (#{qna_seq}, #{reply_content}, #{reply_file}, #{reply_id})
+	</insert>
+	
+	<update id="updateReply" parameterType="kr.smhrd.domain.Reply">
+		update t_reply set reply_content = #{reply_content}, reply_file = #{reply_file} where reply_seq = #{reply_seq}
+	</update>
+	
+	<delete id="deleteReply" parameterType = "int">
+		delete from t_reply where reply_seq = #{reply_seq}
+	</delete>
+</mapper>
