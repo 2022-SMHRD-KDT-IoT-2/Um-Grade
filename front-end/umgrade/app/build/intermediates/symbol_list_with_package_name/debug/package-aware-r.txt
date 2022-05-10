@@ -2645,6 +2645,10 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id ckAllCheck
+id ckMarketing
+id ckPersonal
+id ckTerms
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2994,9 +2998,6 @@ id transition_transform
 id triangle
 id tvJoin
 id tvJoinTitle
-id tvMarketing
-id tvPersonal
-id tvTerms
 id unchecked
 id uniform
 id unlabeled
@@ -3347,6 +3348,7 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_join
+string tvAllCheck
 string tvJoin
 string tvJoinTitle
 string tvMarketing

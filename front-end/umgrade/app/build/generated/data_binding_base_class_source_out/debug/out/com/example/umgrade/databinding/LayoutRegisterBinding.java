@@ -29,6 +29,18 @@ public final class LayoutRegisterBinding implements ViewBinding {
   public final Button btnJoin;
 
   @NonNull
+  public final CheckBox ckAllCheck;
+
+  @NonNull
+  public final CheckBox ckMarketing;
+
+  @NonNull
+  public final CheckBox ckPersonal;
+
+  @NonNull
+  public final CheckBox ckTerms;
+
+  @NonNull
   public final EditText edtJoinAddr;
 
   @NonNull
@@ -52,23 +64,19 @@ public final class LayoutRegisterBinding implements ViewBinding {
   @NonNull
   public final ImageView imgLogo;
 
-  @NonNull
-  public final CheckBox tvMarketing;
-
-  @NonNull
-  public final CheckBox tvPersonal;
-
-  @NonNull
-  public final CheckBox tvTerms;
-
   private LayoutRegisterBinding(@NonNull CardView rootView, @NonNull Button btnIdCheck,
-      @NonNull Button btnJoin, @NonNull EditText edtJoinAddr, @NonNull EditText edtJoinEmail,
-      @NonNull EditText edtJoinId, @NonNull EditText edtJoinName, @NonNull EditText edtJoinPhone,
-      @NonNull EditText edtJoinPw, @NonNull EditText edtJoinPwCheck, @NonNull ImageView imgLogo,
-      @NonNull CheckBox tvMarketing, @NonNull CheckBox tvPersonal, @NonNull CheckBox tvTerms) {
+      @NonNull Button btnJoin, @NonNull CheckBox ckAllCheck, @NonNull CheckBox ckMarketing,
+      @NonNull CheckBox ckPersonal, @NonNull CheckBox ckTerms, @NonNull EditText edtJoinAddr,
+      @NonNull EditText edtJoinEmail, @NonNull EditText edtJoinId, @NonNull EditText edtJoinName,
+      @NonNull EditText edtJoinPhone, @NonNull EditText edtJoinPw, @NonNull EditText edtJoinPwCheck,
+      @NonNull ImageView imgLogo) {
     this.rootView = rootView;
     this.btnIdCheck = btnIdCheck;
     this.btnJoin = btnJoin;
+    this.ckAllCheck = ckAllCheck;
+    this.ckMarketing = ckMarketing;
+    this.ckPersonal = ckPersonal;
+    this.ckTerms = ckTerms;
     this.edtJoinAddr = edtJoinAddr;
     this.edtJoinEmail = edtJoinEmail;
     this.edtJoinId = edtJoinId;
@@ -77,9 +85,6 @@ public final class LayoutRegisterBinding implements ViewBinding {
     this.edtJoinPw = edtJoinPw;
     this.edtJoinPwCheck = edtJoinPwCheck;
     this.imgLogo = imgLogo;
-    this.tvMarketing = tvMarketing;
-    this.tvPersonal = tvPersonal;
-    this.tvTerms = tvTerms;
   }
 
   @Override
@@ -118,6 +123,30 @@ public final class LayoutRegisterBinding implements ViewBinding {
       id = R.id.btnJoin;
       Button btnJoin = ViewBindings.findChildViewById(rootView, id);
       if (btnJoin == null) {
+        break missingId;
+      }
+
+      id = R.id.ckAllCheck;
+      CheckBox ckAllCheck = ViewBindings.findChildViewById(rootView, id);
+      if (ckAllCheck == null) {
+        break missingId;
+      }
+
+      id = R.id.ckMarketing;
+      CheckBox ckMarketing = ViewBindings.findChildViewById(rootView, id);
+      if (ckMarketing == null) {
+        break missingId;
+      }
+
+      id = R.id.ckPersonal;
+      CheckBox ckPersonal = ViewBindings.findChildViewById(rootView, id);
+      if (ckPersonal == null) {
+        break missingId;
+      }
+
+      id = R.id.ckTerms;
+      CheckBox ckTerms = ViewBindings.findChildViewById(rootView, id);
+      if (ckTerms == null) {
         break missingId;
       }
 
@@ -169,27 +198,9 @@ public final class LayoutRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvMarketing;
-      CheckBox tvMarketing = ViewBindings.findChildViewById(rootView, id);
-      if (tvMarketing == null) {
-        break missingId;
-      }
-
-      id = R.id.tvPersonal;
-      CheckBox tvPersonal = ViewBindings.findChildViewById(rootView, id);
-      if (tvPersonal == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTerms;
-      CheckBox tvTerms = ViewBindings.findChildViewById(rootView, id);
-      if (tvTerms == null) {
-        break missingId;
-      }
-
-      return new LayoutRegisterBinding((CardView) rootView, btnIdCheck, btnJoin, edtJoinAddr,
-          edtJoinEmail, edtJoinId, edtJoinName, edtJoinPhone, edtJoinPw, edtJoinPwCheck, imgLogo,
-          tvMarketing, tvPersonal, tvTerms);
+      return new LayoutRegisterBinding((CardView) rootView, btnIdCheck, btnJoin, ckAllCheck,
+          ckMarketing, ckPersonal, ckTerms, edtJoinAddr, edtJoinEmail, edtJoinId, edtJoinName,
+          edtJoinPhone, edtJoinPw, edtJoinPwCheck, imgLogo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

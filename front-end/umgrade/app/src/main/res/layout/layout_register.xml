@@ -112,24 +112,36 @@
             android:maxLines="1" />
 
         <CheckBox
-            android:id="@+id/tvTerms"
+            android:id="@+id/ckAllCheck"
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:buttonTint="#77A9D5"
+            android:text="@string/tvAllCheck"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/ckTerms"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:buttonTint="#77A9D5"
             android:text="@string/tvTerms"
             android:textSize="10sp" />
 
         <CheckBox
-            android:id="@+id/tvPersonal"
+            android:id="@+id/ckPersonal"
             android:layout_width="match_parent"
             android:layout_height="25dp"
+            android:buttonTint="#77A9D5"
             android:text="@string/tvPersonal"
             android:textSize="10sp" />
 
         <CheckBox
-            android:id="@+id/tvMarketing"
+            android:id="@+id/ckMarketing"
             android:layout_width="match_parent"
             android:layout_height="25dp"
+            android:buttonTint="#77A9D5"
             android:text="@string/tvMarketing"
             android:textSize="10sp" />
 
@@ -139,10 +151,12 @@
             android:layout_width="match_parent"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/loginViewsMargin"
-            android:backgroundTint="#2196F3"
+            android:backgroundTint="#B9B7BD"
+            android:clickable="false"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text="@string/btnJoin"
+            android:textColor="#888888"
             app:cornerRadius="5dp" />
 
     </LinearLayout>

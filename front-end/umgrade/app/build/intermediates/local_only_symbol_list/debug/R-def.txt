@@ -30,6 +30,10 @@ id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
+id ckAllCheck
+id ckMarketing
+id ckPersonal
+id ckTerms
 id edtJoinAddr
 id edtJoinEmail
 id edtJoinId
@@ -43,9 +47,6 @@ id imgLogo
 id scrollView2
 id tvJoin
 id tvJoinTitle
-id tvMarketing
-id tvPersonal
-id tvTerms
 layout activity_join
 layout activity_login
 layout activity_main
@@ -68,6 +69,7 @@ string edtJoinPwCheck
 string edtLoginId
 string edtLoginPw
 string title_activity_join
+string tvAllCheck
 string tvJoin
 string tvJoinTitle
 string tvMarketing

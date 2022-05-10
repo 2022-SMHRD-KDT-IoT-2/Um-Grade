@@ -36,11 +36,12 @@
     <string name="edtLoginId">ID를 입력하세요</string>
     <string name="edtLoginPw">PW를 입력하세요</string>
     <string name="title_activity_join">JoinActivity</string>
+    <string name="tvAllCheck">모두 동의합니다.</string>
     <string name="tvJoin">회원가입하기</string>
     <string name="tvJoinTitle">회원가입</string>
     <string name="tvMarketing">마케팅 정보 수신 동의</string>
-    <string name="tvPersonal">개인정보 취급방침 동의*</string>
-    <string name="tvTerms">이용약관 동의*</string>
+    <string name="tvPersonal">개인정보 취급방침 동의(필수)</string>
+    <string name="tvTerms">이용약관 동의(필수)</string>
     <style name="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
