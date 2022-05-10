@@ -15,12 +15,12 @@
 	
 	<!-- 유저 카드 등록 -->
 	<update id="updateUserBK" parameterType = "HashMap">
-		update t_user set user_type = 'P' and billing_key = #{billing_key} where user_id = #{customer_key}
+		update t_user set user_type = 'P', user_b_key = #{billing_key} where user_id = #{customer_key}
 	</update>
 	
 	<!-- 유저 카드등록 취소 -->
 	<update id="updateUserBKUnused" parameterType = "String">
-		update t_user set user_type = 'U' and billing_key = 'N' where user_id = #{user_id}
+		update t_user set user_type = 'U', user_b_key = 'N' where user_id = #{user_id}
 	</update>
 	
 	<!-- 유저 포인트 조회 -->
