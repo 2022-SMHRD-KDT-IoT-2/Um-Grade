@@ -27,7 +27,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:background="#FFFFFF"
             android:src="@drawable/umbrella" />
 

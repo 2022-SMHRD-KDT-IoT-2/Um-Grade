@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,6 +25,7 @@
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:background="#FFFFFF"
             android:src="@drawable/umbrella" />
 
@@ -116,33 +116,73 @@
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_weight="1"
             android:buttonTint="#77A9D5"
-            android:text="@string/tvAllCheck"
+            android:text="@string/ckAllCheck"
             android:textSize="11dp"
             android:textStyle="bold" />
 
-        <CheckBox
-            android:id="@+id/ckTerms"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:buttonTint="#77A9D5"
-            android:text="@string/tvTerms"
-            android:textSize="10sp" />
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:orientation="horizontal">
 
-        <CheckBox
-            android:id="@+id/ckPersonal"
+            <CheckBox
+                android:id="@+id/ckTerms"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:buttonTint="#77A9D5"
+                android:text="@string/ckTerms"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvMoreOne"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:gravity="center|right"
+                android:paddingRight="7dp"
+                android:text="@string/tvMore"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:buttonTint="#77A9D5"
-            android:text="@string/tvPersonal"
-            android:textSize="10sp" />
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ckPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:buttonTint="#77A9D5"
+                android:text="@string/ckPersonal"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvMoreTwo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:gravity="center|right"
+                android:paddingRight="7dp"
+                android:text="@string/tvMore"
+                android:textSize="10sp" />
+        </LinearLayout>
 
         <CheckBox
             android:id="@+id/ckMarketing"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:buttonTint="#77A9D5"
-            android:text="@string/tvMarketing"
+            android:text="@string/ckMarketing"
             android:textSize="10sp" />
 
         <Button

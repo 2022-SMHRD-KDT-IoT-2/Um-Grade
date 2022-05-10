@@ -2997,6 +2997,8 @@ int id transition_transform 0x7f0801d7
 int id triangle 0x7f0801d8
 int id tvJoin 0x7f0801d9
 int id tvJoinTitle 0x7f0801da
+int id tvMoreOne 0x7f0801f1
+int id tvMoreTwo 0x7f0801f2
 int id unchecked 0x7f0801db
 int id uniform 0x7f0801dc
 int id unlabeled 0x7f0801dd
@@ -3241,6 +3243,10 @@ int string character_counter_content_description 0x7f0f0024
 int string character_counter_overflowed_content_description 0x7f0f0025
 int string character_counter_pattern 0x7f0f0026
 int string chip_text 0x7f0f0027
+int string ckAllCheck 0x7f0f0098
+int string ckMarketing 0x7f0f0099
+int string ckPersonal 0x7f0f009a
+int string ckTerms 0x7f0f009b
 int string clear_text_end_icon_content_description 0x7f0f0028
 int string edtJoinAddr 0x7f0f0029
 int string edtJoinEmail 0x7f0f002a
@@ -3347,12 +3353,9 @@ int string path_password_strike_through 0x7f0f008e
 int string search_menu_title 0x7f0f008f
 int string status_bar_notification_info_overflow 0x7f0f0090
 int string title_activity_join 0x7f0f0091
-int string tvAllCheck 0x7f0f0092
 int string tvJoin 0x7f0f0093
 int string tvJoinTitle 0x7f0f0094
-int string tvMarketing 0x7f0f0095
-int string tvPersonal 0x7f0f0096
-int string tvTerms 0x7f0f0097
+int string tvMore 0x7f0f009c
 int style AlertDialog_AppCompat 0x7f100000
 int style AlertDialog_AppCompat_Light 0x7f100001
 int style AndroidThemeColorAccentYellow 0x7f100002

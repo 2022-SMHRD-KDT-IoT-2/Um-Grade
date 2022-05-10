@@ -47,6 +47,8 @@ id imgLogo
 id scrollView2
 id tvJoin
 id tvJoinTitle
+id tvMoreOne
+id tvMoreTwo
 layout activity_join
 layout activity_login
 layout activity_main
@@ -59,6 +61,10 @@ string btnIdCheck
 string btnJoin
 string btnKakaoLogin
 string btnLogin
+string ckAllCheck
+string ckMarketing
+string ckPersonal
+string ckTerms
 string edtJoinAddr
 string edtJoinEmail
 string edtJoinId
@@ -69,12 +75,9 @@ string edtJoinPwCheck
 string edtLoginId
 string edtLoginPw
 string title_activity_join
-string tvAllCheck
 string tvJoin
 string tvJoinTitle
-string tvMarketing
-string tvPersonal
-string tvTerms
+string tvMore
 style AppTheme
 style Theme.Umgrade
 style headerText

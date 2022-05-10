@@ -2998,6 +2998,8 @@ id transition_transform
 id triangle
 id tvJoin
 id tvJoinTitle
+id tvMoreOne
+id tvMoreTwo
 id unchecked
 id uniform
 id unlabeled
@@ -3242,6 +3244,10 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
+string ckAllCheck
+string ckMarketing
+string ckPersonal
+string ckTerms
 string clear_text_end_icon_content_description
 string edtJoinAddr
 string edtJoinEmail
@@ -3348,12 +3354,9 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_join
-string tvAllCheck
 string tvJoin
 string tvJoinTitle
-string tvMarketing
-string tvPersonal
-string tvTerms
+string tvMore
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
