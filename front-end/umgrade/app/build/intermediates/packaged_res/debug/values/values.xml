@@ -26,6 +26,10 @@
     <string name="btnJoin">가입하기</string>
     <string name="btnKakaoLogin">카카오로 시작하기</string>
     <string name="btnLogin">로그인</string>
+    <string name="ckAllCheck">모두 동의합니다.</string>
+    <string name="ckMarketing">마케팅 정보 수신 동의</string>
+    <string name="ckPersonal">개인정보 취급방침 동의(필수)</string>
+    <string name="ckTerms">이용약관 동의(필수)</string>
     <string name="edtJoinAddr">주소</string>
     <string name="edtJoinEmail">이메일</string>
     <string name="edtJoinId">아이디</string>
@@ -38,9 +42,7 @@
     <string name="title_activity_join">JoinActivity</string>
     <string name="tvJoin">회원가입하기</string>
     <string name="tvJoinTitle">회원가입</string>
-    <string name="tvMarketing">마케팅 정보 수신 동의</string>
-    <string name="tvPersonal">개인정보 취급방침 동의*</string>
-    <string name="tvTerms">이용약관 동의*</string>
+    <string name="tvMore">(보기)</string>
     <style name="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

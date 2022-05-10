@@ -19,8 +19,10 @@
     <string name="edtJoinName">이름(실명 입력)</string>
     <string name="edtJoinPhone">휴대전화번호</string>
     <string name="edtJoinAddr">주소</string>
-    <string name="tvTerms">이용약관 동의*</string>
-    <string name="tvPersonal">개인정보 취급방침 동의*</string>
-    <string name="tvMarketing">마케팅 정보 수신 동의</string>
+    <string name="ckAllCheck">모두 동의합니다.</string>
+    <string name="tvMore">(보기)</string>
+    <string name="ckTerms">이용약관 동의(필수)</string>
+    <string name="ckPersonal">개인정보 취급방침 동의(필수)</string>
+    <string name="ckMarketing">마케팅 정보 수신 동의</string>
     <string name="btnJoin">가입하기</string>
 </resources>
