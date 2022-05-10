@@ -26,4 +26,10 @@
     <string name="ckPersonal">개인정보 취급방침 동의(필수)</string>
     <string name="ckMarketing">마케팅 정보 수신 동의</string>
     <string name="btnJoin">가입하기</string>
+
+    <!-- frag_menu.xml -->
+    <string name="fragMain">홈</string>
+    <string name="fragCommu">커뮤니티</string>
+    <string name="fragMyPage">마이페이지</string>
+    <string name="fragMore">더보기</string>
 </resources>
