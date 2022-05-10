@@ -19,4 +19,5 @@ public class User {
 	private String user_type;	// 유저 타입
 	private String user_status; // 유저 상태
 	private String user_point;  // 유저 포인트
+	private String user_b_key; // 유저 빌링키
 }
