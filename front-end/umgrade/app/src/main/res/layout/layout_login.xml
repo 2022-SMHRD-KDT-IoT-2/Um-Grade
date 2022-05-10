@@ -50,7 +50,7 @@
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:ems="10"
             android:hint="@string/edtLoginPw"
-            android:inputType="textPersonName" />
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btnLogin"
