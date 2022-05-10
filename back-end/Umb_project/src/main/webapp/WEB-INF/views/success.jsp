@@ -7,13 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-카드 등록에 성공했습니다. 잠시후 다시 돌아갑니다.
+카드 등록에 성공했습니다.
+<button onclick='Sclose()'>복귀</button>
 </body>
 <script>
-var c_interval = 1000;
-window.setTimeout("SelfClose()", c_interval);
-function SelfClose() {
-    window.open('about:blank', '_self').close();
+function Sclose(){
+	window.open('','_self').close();
 }
 </script>
 </html>
