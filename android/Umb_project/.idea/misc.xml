@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/smhrd/Desktop/Git/android/Umb_project/app/src/main/res/layout/activity_umb_main.xml" value="0.5" />
+        <entry key="..\:/Users/smhrd/Desktop/Git/android/Umb_project/app/src/main/res/layout/activity_umb_mypage.xml" value="0.20277777777777778" />
+        <entry key="..\:/Users/smhrd/Desktop/Git/android/Umb_project/app/src/main/res/layout/activity_umb_qr.xml" value="0.2359375" />
         <entry key="..\:/Users/smhrd/Desktop/Um_project/android/Umb_project/app/src/main/res/layout/activity_map.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/smhrd/Desktop/Um_project/android/Umb_project/app/src/main/res/layout/activity_umb_join.xml" value="0.26268115942028986" />
         <entry key="..\:/Users/smhrd/Desktop/Um_project/android/Umb_project/app/src/main/res/layout/activity_umb_login.xml" value="0.36614583333333334" />

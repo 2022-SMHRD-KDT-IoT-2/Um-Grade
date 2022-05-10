@@ -1,10 +1,13 @@
 package com.example.umb_project;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
@@ -36,10 +39,12 @@ import java.security.MessageDigest;
 
 public class UmbMainActivity extends AppCompatActivity implements MapView.MapViewEventListener, MapView.POIItemEventListener {
 
+    private Button scanQRBtn;
     TextView tvUser1, tvUserPoint2;
     Button btnMypage, btnLogout;
     RequestQueue queue;
     StringRequest request;
+
 
 
     @Override
@@ -54,9 +59,20 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
 
         queue = Volley.newRequestQueue(UmbMainActivity.this);
 
+        scanQRBtn = (Button) findViewById(R.id.scanQR);
+
+        scanQRBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UmbMainActivity.this, UmbQrActivity.class);
+                startActivity(intent);
+            }
+        });
+
         int method = Request.Method.POST;
 
-        String server_url = "http://172.30.1.55:8081/myapp/Login";
+
+        String server_url = "http://172.30.1.11:8081/myapp/Login";
 
 
         request = new StringRequest(
@@ -94,7 +110,8 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
 
                 int method = Request.Method.POST;
 
-                String server_url = "http://172.30.1.55:8081/myapp/Login";
+
+                String server_url = "http://172.30.1.11:8081/myapp/Login";
 
                 request = new StringRequest(
                         method,
@@ -157,6 +174,24 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
 
         mapView.setMapViewEventListener(this); // this에 MapView.MapViewEventListener 구현.
         mapView.setPOIItemEventListener(this);
+
+        MapPOIItem marker = new MapPOIItem();
+
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        //마지막 위치 받아오기
+        Location loc_Current = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        //맵 포인트 위도경도 설정
+        MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(37.5666805, 126.9784147);
+        marker.setItemName("Default Marker");
+        marker.setTag(0);
+        marker.setMapPoint(mapPoint);
+        marker.setMarkerType(MapPOIItem.MarkerType.BluePin); // 기본으로 제공하는 BluePin 마커 모양.
+        marker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin); // 마커를 클릭했을때, 기본으로 제공하는 RedPin 마커 모양.
+
+        mapView.addPOIItem(marker);
+
+
+
     }
 
     @Override

@@ -24,6 +24,13 @@ public class UmbrellaService {
 		return mapper.selectOneUmb(umb_seq);
 	}
 	
+	// 우산 RFID 조회 (조건 + 파손되지 않은 우산)
+	public boolean isExistUmbRfid(String rfid) {
+		boolean umbRfid = false;
+		umbRfid = mapper.isExistUmbRfid(rfid);
+		return umbRfid;
+	}
+	
 	// 우산 삭제
 	public void deleteUmb(int umb_seq) {
 		mapper.deleteUmb(umb_seq);

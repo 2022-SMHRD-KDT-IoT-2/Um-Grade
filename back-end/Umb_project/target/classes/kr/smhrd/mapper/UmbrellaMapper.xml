@@ -6,6 +6,10 @@
 		select * from t_umbrella where umb_seq = #{umb_seq}
 	</select>
 	
+	<select id ="isExistUmbRfid" parameterType = "String" resultType = "java.lang.Boolean">
+		select IF(COUNT(*) = 1, 1, 0) from t_umbrella where umb_rfid = #{umb_rfid} and umb_broken = 'N'
+	</select>
+	
 	<insert id="insertUmb" parameterType="kr.smhrd.domain.Umbrella">
 		insert into t_umbrella(ubox_seq, umb_status, umb_broken, umb_rfid, umb_type) values (#{ubox_seq}, #{umb_status}, #{umb_broken}, #{umb_rfid}, #{umb_type})
 	</insert>
