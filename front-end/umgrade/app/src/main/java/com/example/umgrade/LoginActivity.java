@@ -4,8 +4,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,9 +19,15 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.umgrade.info.UserInfo;
+import com.example.umgrade.vo.User;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -50,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int method = Request.Method.POST;
                 // 서버 url
-                String server_url = "";
+                String server_url = "http://220.80.203.18:8081/myapp/Login";
 
                 request = new StringRequest(
                         method,
@@ -61,6 +67,39 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this,
                                         "로그인 성공 > "+response,
                                         Toast.LENGTH_SHORT).show();
+                                if (response.length() > 1) {
+                                    try {
+                                        JSONObject jsonObject = new JSONObject(response);
+                                        String user_id = jsonObject.getString("user_id");
+                                        String user_pw = jsonObject.getString("user_pw");
+                                        String user_name = jsonObject.getString("user_name");
+                                        String user_nick = jsonObject.getString("user_nick");
+                                        String user_email = jsonObject.getString("user_email");
+                                        String user_phone = jsonObject.getString("user_phone");
+                                        String user_joindate = jsonObject.getString("user_joindate");
+                                        String user_addr = jsonObject.getString("user_addr");
+                                        String user_type = jsonObject.getString("user_type");
+                                        String user_status = jsonObject.getString("user_status");
+                                        String user_point = jsonObject.getString("user_point");
+
+                                        User vo = new User(user_id, user_pw, user_name, user_nick, user_email, user_phone, user_joindate, user_addr, user_type, user_status, user_point);
+
+
+                                        Log.v("dddddd", vo.toString());
+                                        UserInfo.info = vo;
+
+                                        Intent intent2 = new Intent(LoginActivity.this, MainActivity.class);
+
+                                        intent2.putExtra("response", response);
+
+                                        startActivity(intent2);
+
+                                        finish();
+
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
                             }
                         },
                         new Response.ErrorListener() {

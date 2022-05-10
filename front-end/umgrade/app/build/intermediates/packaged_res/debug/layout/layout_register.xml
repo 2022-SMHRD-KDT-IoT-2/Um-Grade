@@ -44,7 +44,8 @@
                 android:layout_weight="1"
                 android:hint="@string/edtJoinId"
                 android:inputType="text"
-                android:maxLines="1" />
+                android:maxLines="1"
+                android:textColor="#000000" />
 
             <Button
                 android:id="@+id/btnIdCheck"
@@ -64,7 +65,8 @@
             android:layout_marginTop="3dp"
             android:hint="@string/edtJoinPw"
             android:inputType="text"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/edtJoinPwCheck"
@@ -73,7 +75,18 @@
             android:layout_marginTop="3dp"
             android:hint="@string/edtJoinPwCheck"
             android:inputType="textEmailAddress"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtJoinNick"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinNick"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/edtJoinEmail"
@@ -82,7 +95,8 @@
             android:layout_marginTop="3dp"
             android:hint="@string/edtJoinEmail"
             android:inputType="textPassword"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/edtJoinName"
@@ -91,7 +105,8 @@
             android:layout_marginTop="3dp"
             android:hint="@string/edtJoinName"
             android:inputType="textPassword"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/edtJoinPhone"
@@ -100,7 +115,8 @@
             android:layout_marginTop="3dp"
             android:hint="@string/edtJoinPhone"
             android:inputType="textPassword"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/edtJoinAddr"
@@ -109,7 +125,8 @@
             android:layout_marginTop="3dp"
             android:hint="@string/edtJoinAddr"
             android:inputType="textPassword"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColor="#000000" />
 
         <CheckBox
             android:id="@+id/ckAllCheck"
@@ -135,6 +152,7 @@
                 android:layout_weight="1"
                 android:buttonTint="#77A9D5"
                 android:text="@string/ckTerms"
+                android:textColor="#000000"
                 android:textSize="10sp" />
 
             <TextView
@@ -146,6 +164,7 @@
                 android:gravity="center|right"
                 android:paddingRight="7dp"
                 android:text="@string/tvMore"
+                android:textColor="#000000"
                 android:textSize="10sp" />
 
         </LinearLayout>
@@ -163,6 +182,7 @@
                 android:layout_weight="1"
                 android:buttonTint="#77A9D5"
                 android:text="@string/ckPersonal"
+                android:textColor="#000000"
                 android:textSize="10sp" />
 
             <TextView
@@ -174,6 +194,7 @@
                 android:gravity="center|right"
                 android:paddingRight="7dp"
                 android:text="@string/tvMore"
+                android:textColor="#000000"
                 android:textSize="10sp" />
         </LinearLayout>
 
@@ -183,6 +204,7 @@
             android:layout_height="25dp"
             android:buttonTint="#77A9D5"
             android:text="@string/ckMarketing"
+            android:textColor="#000000"
             android:textSize="10sp" />
 
         <Button

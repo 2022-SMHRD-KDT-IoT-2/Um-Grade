@@ -38,6 +38,7 @@ id edtJoinAddr
 id edtJoinEmail
 id edtJoinId
 id edtJoinName
+id edtJoinNick
 id edtJoinPhone
 id edtJoinPw
 id edtJoinPwCheck
@@ -69,6 +70,7 @@ string edtJoinAddr
 string edtJoinEmail
 string edtJoinId
 string edtJoinName
+string edtJoinNick
 string edtJoinPhone
 string edtJoinPw
 string edtJoinPwCheck
