@@ -54,6 +54,11 @@ public class UserService {
 		mapper.updateUserPoint(map);
 	}
 	
+	//유저 빌링키 조회
+	public String selectUserBK(String user_id) {
+		return mapper.selectUserBK(user_id);
+	}
+	
 	
 
 }

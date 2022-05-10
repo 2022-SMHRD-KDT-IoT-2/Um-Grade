@@ -33,4 +33,9 @@
 		update t_user set user_point = user_point + #{amount} where user_id = #{user_id}
 	</update>
 	
+	<!-- 유저 빌링키 조회 -->
+	<select id="selectUserBK" parameterType = "String" resultType = "String">
+		select user_b_key from t_user where user_id = #{user_id}
+	</select>
+	
 </mapper>

@@ -47,8 +47,8 @@ public class PayController {
 	// 파라미터 4개 (billingKey, customereKey, amount, orderId), 테스트용 [수정할 예정 : 반납 절차와 통합]
 	@RequestMapping("/auto")
 	public String auto(@RequestParam(value="customerKey", defaultValue="noKey") String customerKey, @RequestParam(value="billingKey", defaultValue="noKey") String billingKey) {
-		
-		HttpResponse<String> response = jService.auto("qO_Z_JRYr56uak1jKaK8jKHMYGajEvChY7tRCIjARh4=", "abc", 7000, "9998");
+		String bk = uService.selectUserBK("abc");
+		HttpResponse<String> response = jService.auto(bk, "abc", 7000, "9996");
 		Map<String, String> map = jService.mapJson(response.body());
 		System.out.println(map.get("status"));
 		return "auto";

@@ -30,4 +30,7 @@ public interface UserMapper {
 	//유저 포인트 수정 (결제 이후 결제금액 차감(음수로 입력) + 쿠폰이나 리워드로 포인트 충전)
 	public void updateUserPoint(HashMap<String, Object> map);
 	
+	//유저 빌링키 조회
+	public String selectUserBK(String user_id);
+	
 }
