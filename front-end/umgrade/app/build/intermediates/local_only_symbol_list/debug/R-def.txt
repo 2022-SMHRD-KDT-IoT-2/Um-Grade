@@ -60,6 +60,7 @@ id tvMoreTwo
 layout activity_join
 layout activity_login
 layout activity_main
+layout fragment_commu
 layout fragment_main
 layout layout_login
 layout layout_register

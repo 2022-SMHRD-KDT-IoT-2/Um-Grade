@@ -3188,6 +3188,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_commu
 layout fragment_main
 layout layout_login
 layout layout_register

@@ -3187,6 +3187,7 @@ int layout design_navigation_menu 0x7f0b002b
 int layout design_navigation_menu_item 0x7f0b002c
 int layout design_text_input_end_icon 0x7f0b002d
 int layout design_text_input_start_icon 0x7f0b002e
+int layout fragment_commu 0x7f0b0082
 int layout fragment_main 0x7f0b0078
 int layout layout_login 0x7f0b002f
 int layout layout_register 0x7f0b0030
