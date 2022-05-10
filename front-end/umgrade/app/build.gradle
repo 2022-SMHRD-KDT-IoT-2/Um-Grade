@@ -68,7 +68,7 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:design:27.1.1'
     //카카오 지도 API 추가
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation files('libs/libDaumMapAndroid.jar')
-    implementation files('libs/llibDaumMapEngineApi.jar')
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation files('libs/libDaumMapAndroid.jar')
+//    implementation files('libs/llibDaumMapEngineApi.jar')
 }

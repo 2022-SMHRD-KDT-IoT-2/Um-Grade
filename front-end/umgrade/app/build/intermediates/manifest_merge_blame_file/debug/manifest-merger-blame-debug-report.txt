@@ -6,13 +6,13 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml
+8-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml
+9-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml
 10    <!-- 인터넷 권한 설정 -->
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 14    <!-- <uses-sdk android:minSdkVersion="14" /> -->
@@ -21,52 +21,52 @@
 15-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:13:22-76
 16
 17    <application
-17-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:7:5-30:19
+17-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:7:5-30:19
 18        android:allowBackup="true"
-18-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:8:9-35
+18-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:8:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.7.0] C:\Users\smhrd\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:9:9-43
+21-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:9:9-43
 22        android:label="umgrade"
-22-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:10:9-32
+22-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:10:9-32
 23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:11:9-54
+23-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:11:9-54
 24        android:supportsRtl="true"
-24-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:12:9-35
+24-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:12:9-35
 25        android:testOnly="true"
 26        android:theme="@style/Theme.Umgrade"
-26-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:13:9-45
+26-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:13:9-45
 27        android:usesCleartextTraffic="true" >
-27-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:14:9-44
+27-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:14:9-44
 28        <activity
-28-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:15:9-17:40
+28-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:15:9-17:40
 29            android:name="com.example.umgrade.JoinActivity"
-29-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:16:13-41
+29-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:16:13-41
 30            android:exported="false" />
-30-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:17:13-37
+30-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:17:13-37
 31        <activity
-31-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:18:9-20:40
+31-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:18:9-20:40
 32            android:name="com.example.umgrade.MainActivity"
-32-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:19:13-41
+32-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:19:13-41
 33            android:exported="false" />
-33-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:20:13-37
+33-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:20:13-37
 34        <activity
-34-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:21:9-29:20
+34-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:21:9-29:20
 35            android:name="com.example.umgrade.LoginActivity"
-35-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:22:13-42
+35-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:22:13-42
 36            android:exported="true" >
-36-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:23:13-36
+36-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:23:13-36
 37            <intent-filter>
-37-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:24:13-28:29
+37-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:24:13-28:29
 38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:25:17-69
-38-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:25:25-66
+38-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:25:17-69
+38-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:25:25-66
 39
 40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:27:17-77
-40-->C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\AndroidManifest.xml:27:27-74
+40-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:27:17-77
+40-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:27:27-74
 41            </intent-filter>
 42        </activity>
 43
