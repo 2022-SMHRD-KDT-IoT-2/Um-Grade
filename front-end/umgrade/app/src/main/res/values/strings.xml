@@ -15,6 +15,7 @@
     <string name="btnIdCheck">중복확인</string>
     <string name="edtJoinPw">비밀번호</string>
     <string name="edtJoinPwCheck">비밀번호 확인</string>
+    <string name="edtJoinNick">닉네임</string>
     <string name="edtJoinEmail">이메일</string>
     <string name="edtJoinName">이름(실명 입력)</string>
     <string name="edtJoinPhone">휴대전화번호</string>

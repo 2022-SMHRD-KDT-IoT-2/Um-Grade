@@ -76,6 +76,15 @@
             android:maxLines="1" />
 
         <EditText
+            android:id="@+id/edtJoinNick"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinNick"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
             android:id="@+id/edtJoinEmail"
             style="@style/modifiedEditText"
             android:layout_height="48dp"
