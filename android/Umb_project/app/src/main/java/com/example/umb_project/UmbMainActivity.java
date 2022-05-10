@@ -72,7 +72,7 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
         int method = Request.Method.POST;
 
 
-        String server_url = "http://172.30.1.11:8081/myapp/Login";
+        String server_url = "http://220.80.203.18:8081/myapp/Login";
 
 
         request = new StringRequest(
@@ -111,7 +111,7 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
                 int method = Request.Method.POST;
 
 
-                String server_url = "http://172.30.1.11:8081/myapp/Login";
+                String server_url = "http://220.80.203.18:8081/myapp/Login";
 
                 request = new StringRequest(
                         method,
@@ -173,22 +173,37 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
         mapViewContainer.addView(mapView);
 
         mapView.setMapViewEventListener(this); // this에 MapView.MapViewEventListener 구현.
+        mapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOnWithHeading);
+        mapView.setPOIItemEventListener(this);
+
         mapView.setPOIItemEventListener(this);
 
         MapPOIItem marker = new MapPOIItem();
-
-        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        //마지막 위치 받아오기
-        Location loc_Current = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
         //맵 포인트 위도경도 설정
-        MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(37.5666805, 126.9784147);
-        marker.setItemName("Default Marker");
+        MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(35.14983, 126.91977);
+
+        marker.setItemName("Default Name");
+
         marker.setTag(0);
         marker.setMapPoint(mapPoint);
+
         marker.setMarkerType(MapPOIItem.MarkerType.BluePin); // 기본으로 제공하는 BluePin 마커 모양.
         marker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin); // 마커를 클릭했을때, 기본으로 제공하는 RedPin 마커 모양.
-
         mapView.addPOIItem(marker);
+
+
+        MapPOIItem marker1 = new MapPOIItem();
+
+        MapPoint mapPoint1 = MapPoint.mapPointWithGeoCoord(35.14953, 126.91937);
+
+        marker1.setItemName("Default Name");
+
+        marker1.setTag(0);
+        marker1.setMapPoint(mapPoint1);
+
+        marker1.setMarkerType(MapPOIItem.MarkerType.BluePin); // 기본으로 제공하는 BluePin 마커 모양.
+        marker1.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin); // 마커를 클릭했을때, 기본으로 제공하는 RedPin 마커 모양.
+        mapView.addPOIItem(marker1);
 
 
 

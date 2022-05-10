@@ -1,14 +1,26 @@
-<<<<<<< HEAD
-<resources>
-    <string name="app_name">umgrade</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">UM-CYCLE</string>
 
-    <!-- activity_loginl.xml -->
-    <string name="tvLogin">Login</string>
-    <string name="edtLoginId">ID 입력</string>
-    <string name="edtLoginPw">PW 입력</string>
-    <string name="btnLogin">로그인하기</string>
-=======
-<resources>
-    <string name="app_name">umgrade</string>
->>>>>>> b2a78b6b62cde453780ad848d9e1df0495a923df
+    <!-- layout_loginl.xml -->
+    <string name="edtLoginId">ID를 입력하세요</string>
+    <string name="edtLoginPw">PW를 입력하세요</string>
+    <string name="btnLogin">로그인</string>
+    <string name="tvJoin">회원가입하기</string>
+    <string name="btnKakaoLogin">카카오로 시작하기</string>
+    <string name="title_activity_join">JoinActivity</string>
+
+    <!-- layout_register.xml -->
+    <string name="tvJoinTitle">회원가입</string>
+    <string name="edtJoinId">아이디</string>
+    <string name="btnIdCheck">중복확인</string>
+    <string name="edtJoinPw">비밀번호</string>
+    <string name="edtJoinPwCheck">비밀번호 확인</string>
+    <string name="edtJoinEmail">이메일</string>
+    <string name="edtJoinName">이름(실명 입력)</string>
+    <string name="edtJoinPhone">휴대전화번호</string>
+    <string name="edtJoinAddr">주소</string>
+    <string name="tvTerms">이용약관 동의*</string>
+    <string name="tvPersonal">개인정보 취급방침 동의*</string>
+    <string name="tvMarketing">마케팅 정보 수신 동의</string>
+    <string name="btnJoin">가입하기</string>
 </resources>

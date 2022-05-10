@@ -4,6 +4,10 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_register.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\layout_register.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
@@ -32,8 +36,24 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_join.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_join.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_login.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\layout_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_login_bk.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\ic_login_bk.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_login_shape_bk.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\login_shape_bk.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -42,6 +62,10 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_umbrella.png.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\umbrella.png"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",

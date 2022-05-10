@@ -9,77 +9,82 @@
 8-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
 9-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml
-10
-11    <!-- 인터넷 권한 설정 -->
-12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:6:5-66
-12-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:6:22-64
-13
-14    <application
-14-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:8:5-28:19
-15        android:allowBackup="true"
-15-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:10:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.7.0] C:\Users\smhrd\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:icon="@mipmap/ic_launcher"
-18-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:11:9-43
-19        android:label="@string/app_name"
-19-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:12:9-41
-20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:13:9-54
-21        android:supportsRtl="true"
-21-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:14:9-35
-22        android:testOnly="true"
-23        android:theme="@style/Theme.Umgrade"
-23-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:15:9-45
-24        android:usesCleartextTraffic="true" >
-24-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:9:9-44
-25        <activity
-25-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:16:9-18:40
-26            android:name="com.example.umgrade.MainActivity"
-26-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:17:13-41
-27            android:exported="false" />
-27-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:18:13-37
-28        <activity
-28-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:19:9-27:20
-29            android:name="com.example.umgrade.LoginActivity"
-29-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:20:13-42
-30            android:exported="true" >
-30-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:21:13-36
-31            <intent-filter>
-31-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:22:13-26:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:23:17-69
-32-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:23:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:25:17-77
-34-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:25:27-74
-35            </intent-filter>
-36        </activity>
-37
-38        <provider
-38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-39            android:name="androidx.startup.InitializationProvider"
-39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-40            android:authorities="com.example.umgrade.androidx-startup"
-40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-41            android:exported="false" >
-41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-42            <meta-data
-42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-43                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-44                android:value="androidx.startup" />
-44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-45            <meta-data
-45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-46                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-47                android:value="androidx.startup" />
-47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-48        </provider>
-49    </application>
-50
-51</manifest>
+10    <!-- 인터넷 권한 설정 -->
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:7:5-30:19
+14        android:allowBackup="true"
+14-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.7.0] C:\Users\smhrd\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="umgrade"
+18-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:10:9-32
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.Umgrade"
+22-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:13:9-45
+23        android:usesCleartextTraffic="true" >
+23-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:14:9-44
+24        <activity
+24-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:15:9-17:40
+25            android:name="com.example.umgrade.JoinActivity"
+25-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:16:13-41
+26            android:exported="false" />
+26-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:17:13-37
+27        <activity
+27-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:18:9-20:40
+28            android:name="com.example.umgrade.MainActivity"
+28-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:19:13-41
+29            android:exported="false" />
+29-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:20:13-37
+30        <activity
+30-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:21:9-29:20
+31            android:name="com.example.umgrade.LoginActivity"
+31-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:22:13-42
+32            android:exported="true" >
+32-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:23:13-36
+33            <intent-filter>
+33-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:24:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:25:17-69
+34-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:27:17-77
+36-->C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <provider
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+41            android:name="androidx.startup.InitializationProvider"
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+42            android:authorities="com.example.umgrade.androidx-startup"
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+43            android:exported="false" >
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+44            <meta-data
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+46                android:value="androidx.startup" />
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+47            <meta-data
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+49                android:value="androidx.startup" />
+49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+50        </provider>
+51    </application>
+52
+53</manifest>
