@@ -14,16 +14,6 @@ import kr.smhrd.service.UserService;
 
 @Controller
 public class PayController {
-
-	@RequestMapping("/pay")
-	public String pay(@RequestParam(value="id", defaultValue="abcd") String id) {
-		return "paytest1";
-	}
-	
-	@RequestMapping("/pay1")
-	public String pay1() {
-		return "test123";
-	}
 	
 	@Autowired
 	private JsonService jService;
@@ -48,7 +38,7 @@ public class PayController {
 	@RequestMapping("/auto")
 	public String auto(@RequestParam(value="customerKey", defaultValue="noKey") String customerKey, @RequestParam(value="billingKey", defaultValue="noKey") String billingKey) {
 		String bk = uService.selectUserBK("abc");
-		HttpResponse<String> response = jService.auto(bk, "abc", 7000, "9996");
+		HttpResponse<String> response = jService.auto(bk, "abc", 7000, "9991");
 		Map<String, String> map = jService.mapJson(response.body());
 		System.out.println(map.get("status"));
 		return "auto";

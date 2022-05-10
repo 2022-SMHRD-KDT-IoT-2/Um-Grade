@@ -9,6 +9,6 @@
   <script src="https://js.tosspayments.com/v1"></script>
 </head>
 <body>
-<button onclick="location.href='/myapp/pay?id=abc'">카드등록</button>
+<button onclick="location.href='/myapp/pay?id=abc'">카드등록</button> <!--url 뒤 쿼리스트링으로 id 전송-->
 </body>
 </html>
