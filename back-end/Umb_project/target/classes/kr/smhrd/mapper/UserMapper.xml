@@ -7,9 +7,30 @@
 		insert into t_user (user_id, user_pw, user_nick, user_email, user_phone, user_addr)
 		values (#{user_id}, #{user_pw}, #{user_nick}, #{user_email}, #{user_phone}, #{user_addr})
 	</insert>
+	
 	<!-- 유저 로그인 -->
 	<select id  = "userLogin" parameterType = "kr.smhrd.domain.User" resultType = "kr.smhrd.domain.User">
 		select * from t_user where user_id = #{user_id} and user_pw = #{user_pw}
 	</select>
+	
+	<!-- 유저 카드 등록 -->
+	<update id="updateUserBK" parameterType = "HashMap">
+		update t_user set user_type = 'P' and billing_key = #{billing_key} where user_id = #{customer_key}
+	</update>
+	
+	<!-- 유저 카드등록 취소 -->
+	<update id="updateUserBKUnused" parameterType = "String">
+		update t_user set user_type = 'U' and billing_key = 'N' where user_id = #{user_id}
+	</update>
+	
+	<!-- 유저 포인트 조회 -->
+	<select id="isExistUserPoint" parameterType = "HashMap" resultType = "java.lang.Boolean">
+		select IF(COUNT(*) = 1, 1, 0) from t_user where user_id = #{user_id} and user_point >= #{amount}
+	</select>
+	
+	<!-- 유저 포인트 수정 -->
+	<update id="updateUserPoint" parameterType = "HashMap">
+		update t_user set user_point = user_point + #{amount} where user_id = #{user_id}
+	</update>
 	
 </mapper>
