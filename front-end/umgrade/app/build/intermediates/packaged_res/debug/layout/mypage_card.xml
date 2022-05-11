@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp">
+        android:layout_height="180dp"
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/tvNickMypageCard"
@@ -19,8 +20,8 @@
             android:textColor="#2196F3"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintBottom_toBottomOf="@+id/imgUmb"
+            app:layout_constraintStart_toEndOf="@+id/imgUmb"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -42,7 +43,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
             android:text="@string/tvComment1MypageCard"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imgUmb"
             app:layout_constraintTop_toBottomOf="@+id/tvNickMypageCard" />
 
         <TextView
@@ -70,16 +71,17 @@
             app:layout_constraintStart_toEndOf="@+id/tvCarbonMypageCard"
             app:layout_constraintTop_toTopOf="@+id/tvCarbonMypageCard" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgMypageProfile"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="24dp"
             android:layout_weight="1"
+            app:civ_circle_background_color="#96D1FF"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/mypage" />
+            app:srcCompat="@drawable/mapimg" />
 
         <TextView
             android:id="@+id/tvRatingTextMypageCard"
@@ -175,7 +177,7 @@
             app:layout_constraintVertical_bias="0.622" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imgUmb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -183,6 +185,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/closed_umbrella" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="123dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

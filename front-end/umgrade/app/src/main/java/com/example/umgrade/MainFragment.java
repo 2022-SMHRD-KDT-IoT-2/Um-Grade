@@ -8,10 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 
 public class MainFragment extends Fragment {
     Button btnFare;
+    ImageView imgMypageProfile;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -20,6 +24,9 @@ public class MainFragment extends Fragment {
 
         btnFare = view.findViewById(R.id.btnFare);
 
+
+        imgMypageProfile = (ImageView) view.findViewById(R.id.imgMypageProfile);
+        Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgMypageProfile);
 
         // 로그인 시 btnFare에 "오늘까지의 UM-CYCLE 이용 요금은 n,nnn원 입니다." 출력
         btnFare.setOnClickListener(new View.OnClickListener() {

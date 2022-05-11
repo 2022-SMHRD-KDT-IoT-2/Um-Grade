@@ -67,13 +67,14 @@ id fragMain
 id fragMore
 id fragMyPage
 id guideline2
-id imageView3
+id guideline3
 id imgLogo
 id imgMapCard
 id imgMypageProfile
 id imgQrCard
 id imgServiceCard
 id imgSupportCard
+id imgUmb
 id mainLogo
 id mainScroll
 id scrollView2

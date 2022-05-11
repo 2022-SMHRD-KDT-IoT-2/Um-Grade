@@ -9,9 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,10 +26,13 @@ public final class MypageCardBinding implements ViewBinding {
   public final View divider;
 
   @NonNull
-  public final ImageView imageView3;
+  public final Guideline guideline3;
 
   @NonNull
-  public final ImageView imgMypageProfile;
+  public final CircleImageView imgMypageProfile;
+
+  @NonNull
+  public final ImageView imgUmb;
 
   @NonNull
   public final TextView tvCarbonMypageCard;
@@ -63,17 +68,18 @@ public final class MypageCardBinding implements ViewBinding {
   public final TextView tvWelcomeMypageCard;
 
   private MypageCardBinding(@NonNull CardView rootView, @NonNull View divider,
-      @NonNull ImageView imageView3, @NonNull ImageView imgMypageProfile,
-      @NonNull TextView tvCarbonMypageCard, @NonNull TextView tvComment1MypageCard,
-      @NonNull TextView tvComment2MypageCard, @NonNull TextView tvCouponMypageCard,
-      @NonNull TextView tvCouponTextMypageCard, @NonNull TextView tvNickMypageCard,
-      @NonNull TextView tvPointMypageCard, @NonNull TextView tvPointTextMypageCard,
-      @NonNull TextView tvRatingMypageCard, @NonNull TextView tvRatingTextMypageCard,
-      @NonNull TextView tvWelcomeMypageCard) {
+      @NonNull Guideline guideline3, @NonNull CircleImageView imgMypageProfile,
+      @NonNull ImageView imgUmb, @NonNull TextView tvCarbonMypageCard,
+      @NonNull TextView tvComment1MypageCard, @NonNull TextView tvComment2MypageCard,
+      @NonNull TextView tvCouponMypageCard, @NonNull TextView tvCouponTextMypageCard,
+      @NonNull TextView tvNickMypageCard, @NonNull TextView tvPointMypageCard,
+      @NonNull TextView tvPointTextMypageCard, @NonNull TextView tvRatingMypageCard,
+      @NonNull TextView tvRatingTextMypageCard, @NonNull TextView tvWelcomeMypageCard) {
     this.rootView = rootView;
     this.divider = divider;
-    this.imageView3 = imageView3;
+    this.guideline3 = guideline3;
     this.imgMypageProfile = imgMypageProfile;
+    this.imgUmb = imgUmb;
     this.tvCarbonMypageCard = tvCarbonMypageCard;
     this.tvComment1MypageCard = tvComment1MypageCard;
     this.tvComment2MypageCard = tvComment2MypageCard;
@@ -120,15 +126,21 @@ public final class MypageCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
+      id = R.id.guideline3;
+      Guideline guideline3 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline3 == null) {
         break missingId;
       }
 
       id = R.id.imgMypageProfile;
-      ImageView imgMypageProfile = ViewBindings.findChildViewById(rootView, id);
+      CircleImageView imgMypageProfile = ViewBindings.findChildViewById(rootView, id);
       if (imgMypageProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.imgUmb;
+      ImageView imgUmb = ViewBindings.findChildViewById(rootView, id);
+      if (imgUmb == null) {
         break missingId;
       }
 
@@ -198,10 +210,10 @@ public final class MypageCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new MypageCardBinding((CardView) rootView, divider, imageView3, imgMypageProfile,
-          tvCarbonMypageCard, tvComment1MypageCard, tvComment2MypageCard, tvCouponMypageCard,
-          tvCouponTextMypageCard, tvNickMypageCard, tvPointMypageCard, tvPointTextMypageCard,
-          tvRatingMypageCard, tvRatingTextMypageCard, tvWelcomeMypageCard);
+      return new MypageCardBinding((CardView) rootView, divider, guideline3, imgMypageProfile,
+          imgUmb, tvCarbonMypageCard, tvComment1MypageCard, tvComment2MypageCard,
+          tvCouponMypageCard, tvCouponTextMypageCard, tvNickMypageCard, tvPointMypageCard,
+          tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard, tvWelcomeMypageCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

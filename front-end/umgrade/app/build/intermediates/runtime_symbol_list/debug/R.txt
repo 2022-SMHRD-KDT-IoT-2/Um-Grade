@@ -254,6 +254,10 @@ int attr circularflow_defaultAngle 0x7f0300bc
 int attr circularflow_defaultRadius 0x7f0300bd
 int attr circularflow_radiusInDP 0x7f0300be
 int attr circularflow_viewCenter 0x7f0300bf
+int attr civ_border_color 0x7f03044f
+int attr civ_border_overlay 0x7f030450
+int attr civ_border_width 0x7f030451
+int attr civ_circle_background_color 0x7f030452
 int attr clearsTag 0x7f0300c0
 int attr clickAction 0x7f0300c1
 int attr clockFaceBackgroundColor 0x7f0300c2
@@ -2805,6 +2809,7 @@ int id fragment_container_view_tag 0x7f0800dc
 int id frost 0x7f0800dd
 int id ghost_view 0x7f0800de
 int id ghost_view_holder 0x7f0800df
+int id glide_custom_view_target_tag 0x7f080228
 int id gone 0x7f0800e0
 int id graph 0x7f0800e1
 int id graph_wrap 0x7f0800e2
@@ -2813,6 +2818,7 @@ int id grouping 0x7f0800e4
 int id groups 0x7f0800e5
 int id guideline 0x7f0800e6
 int id guideline2 0x7f0800e7
+int id guideline3 0x7f080229
 int id header_title 0x7f0800e8
 int id hideable 0x7f0800e9
 int id home 0x7f0800ea
@@ -2826,13 +2832,13 @@ int id ifRoom 0x7f0800f1
 int id ignore 0x7f0800f2
 int id ignoreRequest 0x7f0800f3
 int id image 0x7f0800f4
-int id imageView3 0x7f08020b
 int id imgLogo 0x7f0800f5
 int id imgMapCard 0x7f080217
 int id imgMypageProfile 0x7f08021c
 int id imgQrCard 0x7f080218
 int id imgServiceCard 0x7f080219
 int id imgSupportCard 0x7f08021a
+int id imgUmb 0x7f08022a
 int id immediateStop 0x7f0800f6
 int id included 0x7f0800f7
 int id info 0x7f0800f8
@@ -4947,6 +4953,11 @@ int styleable ChipGroup_chipSpacingVertical 3
 int styleable ChipGroup_selectionRequired 4
 int styleable ChipGroup_singleLine 5
 int styleable ChipGroup_singleSelection 6
+int[] styleable CircleImageView { 0x7f03044f, 0x7f030450, 0x7f030451, 0x7f030452 }
+int styleable CircleImageView_civ_border_color 0
+int styleable CircleImageView_civ_border_overlay 1
+int styleable CircleImageView_civ_border_width 2
+int styleable CircleImageView_civ_circle_background_color 3
 int[] styleable CircularProgressIndicator { 0x7f0301f7, 0x7f0301f9, 0x7f0301fa }
 int styleable CircularProgressIndicator_indicatorDirectionCircular 0
 int styleable CircularProgressIndicator_indicatorInset 1
