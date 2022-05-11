@@ -35,4 +35,16 @@
     
     <!-- fragment_main -->
     <string name="btnFare">UM-CYCLE 이용 요금 안내</string>
+
+    <!-- map_card.xml -->
+    <string name="btnMapCard">UM-CYCLE\n보관함 찾기</string>
+
+    <!-- qr_card.xml -->
+    <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
+
+    <!-- service_card.xml -->
+    <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
+
+    <!-- support_card.xml -->
+    <string name="btnSupportCard">고객센터</string>
 </resources>
