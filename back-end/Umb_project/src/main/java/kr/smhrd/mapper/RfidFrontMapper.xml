@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.smhrd.mapper.RfidFrontMapper">
 
-	<insert id="insertLog" parameterType="kr.smhrd.domain.Rfid">
+	<insert id="insertLog" parameterType="String">
 		insert into t_frfid(rfid_uid) values (#{rfid_uid})
 	</insert>
 	

@@ -68,6 +68,7 @@ public class ReturnService {
 		
 		// 대여기록 수정
 		vo.setPay_done("Y");
+		vo.setPay_amount(pay);
 		rMapper.updateRentReturn(vo);
 		
 		// 보관함 사용자 초기화
