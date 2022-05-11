@@ -36,5 +36,10 @@ public interface UmbboxMapper {
 	// 보관함 삭제
 	public void deleteUbox(int ubox_seq);
 	
+	// 보관함 대여/반납신호 전송
+	public void updateUboxID(Umbbox vo);
+	
+	// 보관함 대여취소신호/대여-반납 종료신호(보관함 사용자 아이디 초기화) 전송
+	public void updateUboxID2(String ubox_id);
 	
 }

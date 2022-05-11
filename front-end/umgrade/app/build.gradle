@@ -72,4 +72,7 @@ dependencies {
 //    implementation fileTree(include: ['*.jar'], dir: 'libs')
 //    implementation files('libs/libDaumMapAndroid.jar')
 //    implementation files('libs/llibDaumMapEngineApi.jar')
+    //bottomNavigationView
+    //noinspection GradleCompatible,GradleCompatible
+    implementation 'com.android.support:design:29.0.0'
 }
