@@ -13,6 +13,7 @@ import kr.smhrd.domain.Comment;
 import kr.smhrd.domain.Coupon;
 import kr.smhrd.domain.Qna;
 import kr.smhrd.domain.Reply;
+import kr.smhrd.domain.Rfid;
 import kr.smhrd.domain.Umbbox;
 import kr.smhrd.domain.UsingCoupon;
 import kr.smhrd.service.BoardService;
@@ -20,6 +21,7 @@ import kr.smhrd.service.CommentService;
 import kr.smhrd.service.CouponService;
 import kr.smhrd.service.QnaService;
 import kr.smhrd.service.ReplyService;
+import kr.smhrd.service.RfidFrontService;
 import kr.smhrd.service.UmbboxService;
 import kr.smhrd.service.UmbrellaService;
 import kr.smhrd.service.UsingCouponService;
@@ -73,6 +75,9 @@ public class HController {
 	
 	@Autowired
     private CommentService commentService;
+	
+	@Autowired
+    private RfidFrontService rfidFrontService;
 	
 	@RequestMapping("/qna.do")
 	public String qna(Model model) {
@@ -141,6 +146,15 @@ public class HController {
 		model.addAttribute("list",list);
 		
 		return "replyList";
+	}
+	
+	@RequestMapping("/rfid.do")
+	public String rfid(Model model) {
+		List<Rfid> list = rfidFrontService.selectRfid();
+		
+		model.addAttribute("list",list);
+		
+		return "RfidList";
 	}
 	
 }
