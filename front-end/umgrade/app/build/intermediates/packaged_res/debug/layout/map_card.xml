@@ -11,7 +11,7 @@
         android:layout_height="200dp">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imgMapCard"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:adjustViewBounds="true"
@@ -23,7 +23,7 @@
             app:srcCompat="@drawable/mapimg" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnMapCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:backgroundTint="#00FF7474"
@@ -31,14 +31,14 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:stateListAnimator="@null"
-            android:text="Button"
+            android:text="@string/btnMapCard"
             android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imgMapCard"
+            app:layout_constraintTop_toTopOf="@+id/imgMapCard"
             app:layout_constraintVertical_bias="0.893" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

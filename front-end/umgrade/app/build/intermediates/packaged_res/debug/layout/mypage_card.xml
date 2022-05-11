@@ -8,107 +8,190 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp">
+        android:layout_height="180dp"
+        android:background="#FFFFFF">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvNickMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tvNickMypageCard"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgUmb"
+            app:layout_constraintStart_toEndOf="@+id/imgUmb"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvWelcomeMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="left"
+            android:text="@string/tvWelcomeMypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNickMypageCard"
+            app:layout_constraintStart_toEndOf="@+id/tvNickMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvNickMypageCard" />
+
+        <TextView
+            android:id="@+id/tvComment1MypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tvComment1MypageCard"
+            app:layout_constraintStart_toStartOf="@+id/imgUmb"
+            app:layout_constraintTop_toBottomOf="@+id/tvNickMypageCard" />
+
+        <TextView
+            android:id="@+id/tvCarbonMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="left"
+            android:text="@string/tvCarbonMypageCard"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvComment1MypageCard"
+            app:layout_constraintStart_toEndOf="@+id/tvComment1MypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvComment1MypageCard" />
+
+        <TextView
+            android:id="@+id/tvComment2MypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:gravity="left"
+            android:text="@string/tvComment2MypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCarbonMypageCard"
+            app:layout_constraintStart_toEndOf="@+id/tvCarbonMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvCarbonMypageCard" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgMypageProfile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            app:civ_circle_background_color="#96D1FF"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mapimg" />
+
+        <TextView
+            android:id="@+id/tvRatingTextMypageCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
-            android:text="TextView"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="right"
+            android:text="@string/tvRatingTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvRatingMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/tvComment1MypageCard" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvRatingMypageCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            android:layout_marginRight="30dp"
+            android:gravity="left"
+            android:text="@string/tvRatingMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvRatingTextMypageCard" />
+
+        <TextView
+            android:id="@+id/tvPointTextMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tvPointTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRatingMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvPointMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvRatingMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvRatingMypageCard" />
+
+        <TextView
+            android:id="@+id/tvPointMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="left"
+            android:text="@string/tvPointMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvPointTextMypageCard" />
+
+        <TextView
+            android:id="@+id/tvCouponTextMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tvCouponTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPointMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvCouponMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvPointMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvPointMypageCard" />
+
+        <TextView
+            android:id="@+id/tvCouponMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:gravity="left"
+            android:text="@string/tvCouponMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvCouponTextMypageCard" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="390dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvComment1MypageCard"
+            app:layout_constraintVertical_bias="0.622" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:layout_weight="1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/mypage" />
-
-        <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/imgUmb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/textView13"
-            app:layout_constraintEnd_toStartOf="@+id/textView11"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView13"
-            app:layout_constraintTop_toTopOf="@+id/textView13" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/textView11"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
-            app:layout_constraintTop_toTopOf="@+id/textView11" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/textView14"
-            app:layout_constraintEnd_toStartOf="@+id/textView12"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView14"
-            app:layout_constraintTop_toTopOf="@+id/textView14" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/textView15"
-            app:layout_constraintEnd_toStartOf="@+id/textView13"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView15"
-            app:layout_constraintTop_toTopOf="@+id/textView15" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/textView12"
-            app:layout_constraintEnd_toStartOf="@+id/textView10"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView12"
-            app:layout_constraintTop_toTopOf="@+id/textView12" />
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView14"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="packed"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/closed_umbrella" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="123dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

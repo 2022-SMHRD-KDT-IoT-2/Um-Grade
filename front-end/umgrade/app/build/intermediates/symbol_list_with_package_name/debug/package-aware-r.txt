@@ -255,6 +255,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -2483,6 +2487,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable closed_umbrella
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2683,7 +2688,9 @@ id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
-id button
+id btnMapCard
+id btnServiceCard
+id btnSupportCard
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2751,6 +2758,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id divider
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -2802,6 +2810,7 @@ id fragment_container_view_tag
 id frost
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -2810,6 +2819,7 @@ id grouping
 id groups
 id guideline
 id guideline2
+id guideline3
 id header_title
 id hideable
 id home
@@ -2823,9 +2833,13 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView2
-id imageView3
 id imgLogo
+id imgMapCard
+id imgMypageProfile
+id imgQrCard
+id imgServiceCard
+id imgSupportCard
+id imgUmb
 id immediateStop
 id included
 id info
@@ -3047,14 +3061,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView10
-id textView11
-id textView12
-id textView13
-id textView14
-id textView15
-id textView2
-id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3080,10 +3086,21 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvCarbonMypageCard
+id tvComment1MypageCard
+id tvComment2MypageCard
+id tvCouponMypageCard
+id tvCouponTextMypageCard
 id tvJoin
 id tvJoinTitle
 id tvMoreOne
 id tvMoreTwo
+id tvNickMypageCard
+id tvPointMypageCard
+id tvPointTextMypageCard
+id tvRatingMypageCard
+id tvRatingTextMypageCard
+id tvWelcomeMypageCard
 id unchecked
 id uniform
 id unlabeled
@@ -3346,6 +3363,10 @@ string btnIdCheck
 string btnJoin
 string btnKakaoLogin
 string btnLogin
+string btnMapCard
+string btnQrCard
+string btnServiceCard
+string btnSupportCard
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3483,9 +3504,20 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_join
+string tvCarbonMypageCard
+string tvComment1MypageCard
+string tvComment2MypageCard
+string tvCouponMypageCard
+string tvCouponTextMypageCard
 string tvJoin
 string tvJoinTitle
 string tvMore
+string tvNickMypageCard
+string tvPointMypageCard
+string tvPointTextMypageCard
+string tvRatingMypageCard
+string tvRatingTextMypageCard
+string tvWelcomeMypageCard
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -4551,6 +4583,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

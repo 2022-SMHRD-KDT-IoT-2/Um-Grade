@@ -21,16 +21,16 @@ public final class ServiceCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnServiceCard;
 
   @NonNull
-  public final ImageView imageView3;
+  public final ImageView imgServiceCard;
 
-  private ServiceCardBinding(@NonNull CardView rootView, @NonNull Button button,
-      @NonNull ImageView imageView3) {
+  private ServiceCardBinding(@NonNull CardView rootView, @NonNull Button btnServiceCard,
+      @NonNull ImageView imgServiceCard) {
     this.rootView = rootView;
-    this.button = button;
-    this.imageView3 = imageView3;
+    this.btnServiceCard = btnServiceCard;
+    this.imgServiceCard = imgServiceCard;
   }
 
   @Override
@@ -60,19 +60,19 @@ public final class ServiceCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnServiceCard;
+      Button btnServiceCard = ViewBindings.findChildViewById(rootView, id);
+      if (btnServiceCard == null) {
         break missingId;
       }
 
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
+      id = R.id.imgServiceCard;
+      ImageView imgServiceCard = ViewBindings.findChildViewById(rootView, id);
+      if (imgServiceCard == null) {
         break missingId;
       }
 
-      return new ServiceCardBinding((CardView) rootView, button, imageView3);
+      return new ServiceCardBinding((CardView) rootView, btnServiceCard, imgServiceCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -21,16 +21,16 @@ public final class QrCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnMapCard;
 
   @NonNull
-  public final ImageView imageView3;
+  public final ImageView imgQrCard;
 
-  private QrCardBinding(@NonNull CardView rootView, @NonNull Button button,
-      @NonNull ImageView imageView3) {
+  private QrCardBinding(@NonNull CardView rootView, @NonNull Button btnMapCard,
+      @NonNull ImageView imgQrCard) {
     this.rootView = rootView;
-    this.button = button;
-    this.imageView3 = imageView3;
+    this.btnMapCard = btnMapCard;
+    this.imgQrCard = imgQrCard;
   }
 
   @Override
@@ -60,19 +60,19 @@ public final class QrCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnMapCard;
+      Button btnMapCard = ViewBindings.findChildViewById(rootView, id);
+      if (btnMapCard == null) {
         break missingId;
       }
 
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
+      id = R.id.imgQrCard;
+      ImageView imgQrCard = ViewBindings.findChildViewById(rootView, id);
+      if (imgQrCard == null) {
         break missingId;
       }
 
-      return new QrCardBinding((CardView) rootView, button, imageView3);
+      return new QrCardBinding((CardView) rootView, btnMapCard, imgQrCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
