@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 import kr.smhrd.domain.Rent;
 import kr.smhrd.domain.Umbbox;
 import kr.smhrd.mapper.RentMapper;
+import kr.smhrd.mapper.RfidBackMapper;
+import kr.smhrd.mapper.RfidFrontMapper;
 import kr.smhrd.mapper.UmbboxMapper;
 import kr.smhrd.mapper.UmbrellaMapper;
 import kr.smhrd.mapper.UserMapper;
@@ -28,28 +30,31 @@ public class ReturnService {
 	private UmbboxMapper ubMapper;
 	
 	@Autowired
-	private UmbrellaMapper urMapper;
-	
-	@Autowired
 	private RentMapper rMapper;
 	
 	@Autowired
 	private UserMapper uMapper;
 	
+	@Autowired
+	private RfidBackMapper rbMapper;
+	
+	@Autowired
+	private RfidFrontMapper rfMapper;
+	
 	// 우산 반납을 시작
-	public void return1(String uid) throws NoRouteToHostException, ConnectException, IOException, Exception{
-		// 로그 기록 인서트
-		Rent rvo = rMapper.selectOneRfid(uid);
-		Umbbox bvo = null;
-		bvo.setUbox_id(rvo.getRent_id());
-		//bvo.setUbox_seq();
+	public void return1(String uid, String umbbox_seq) throws NoRouteToHostException, ConnectException, IOException, Exception{
+		rfMapper.insertLog(uid); 				// RFID 로그 입력
+		Rent rvo = rMapper.selectOneRfid(uid); 	// 우산 uid로 렌트 VO 호출
+		Umbbox bvo = null; 						// 보관함 VO 생성, updateUboxID(bvo)로 쓰기 위함
+		bvo.setUbox_id(rvo.getRent_id()); 		// 보관함 VO에 우산 
+		bvo.setUbox_seq(Integer.parseInt(umbbox_seq));
 		rpService.getRequestApiGet("http://172.30.1.49:8082/soleOFF");
 		ubMapper.updateUboxID(bvo);
 	}
 	
 	// 우산 반납을 마무리
-	public void return2(String uid) throws NoRouteToHostException, ConnectException, IOException, Exception{
-		// 로그 기록 인서트
+	public void return2(String uid, String umbbox_seq) throws NoRouteToHostException, ConnectException, IOException, Exception{
+		rbMapper.insertLog(uid);
 		rpService.getRequestApiGet("http://172.30.1.49:8082/soleON");
 		Rent vo = rMapper.selectOneRfid(uid);
 		int time = rMapper.selectRentTime(vo.getRent_seq());
@@ -72,7 +77,7 @@ public class ReturnService {
 		rMapper.updateRentReturn(vo);
 		
 		// 보관함 사용자 초기화
-		ubMapper.updateUboxID2(uid);
+		ubMapper.updateUboxID2(umbbox_seq);
 		
 	}
 }

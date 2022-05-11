@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.smhrd.service.RentalService;
 import kr.smhrd.service.ReturnService;
+import kr.smhrd.service.RfidBackService;
+import kr.smhrd.service.RfidFrontService;
 
 @Controller
 public class RetrunController {
@@ -20,24 +22,29 @@ public class RetrunController {
 	@Autowired
 	private RentalService rentalService;
 	
+	@Autowired
+	private RfidFrontService rfService;
+	
+	@Autowired
+	private RfidBackService rbService;
+	
 	
 	@RequestMapping("/frontRfid")
-	public void frontRfid(@RequestParam String uid) throws NoRouteToHostException, ConnectException, IOException, Exception{
-		if(uid.equals("time")){
-			returnService.return1(uid);
-			
+	public void frontRfid(@RequestParam(value="uid") String uid, @RequestParam(value="umbbox_seq") String umbbox_seq) throws NoRouteToHostException, ConnectException, IOException, Exception{
+		if(rfService.selectDiff() < 15 && rbService.selectDiff() != 0){
+			rentalService.rental2(uid, umbbox_seq);
 		}else {
-			rentalService.rental2(uid);
+			returnService.return1(uid, umbbox_seq);
 		}
 	}
 	
 
 	@RequestMapping("/backRfid")
-	public void backRfid(@RequestParam String uid) throws NoRouteToHostException, ConnectException, IOException, Exception{
-		if(uid.equals("time")){
-			rentalService.rental1(uid);
+	public void backRfid(@RequestParam(value="uid") String uid, @RequestParam(value="umbbox_seq") String umbbox_seq) throws NoRouteToHostException, ConnectException, IOException, Exception{
+		if(rbService.selectDiff() < 15 && rbService.selectDiff() != 0){
+			returnService.return2(uid, umbbox_seq);
 		}else {
-			returnService.return2(uid);
+			rentalService.rental1(uid, umbbox_seq);
 		}
 	}
 }

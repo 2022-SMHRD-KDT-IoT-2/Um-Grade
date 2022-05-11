@@ -26,10 +26,10 @@ public class RentalService {
 	@Autowired
 	private RentMapper rMapper;
 	
-	public void rental1(String uid) throws NoRouteToHostException, ConnectException, IOException, Exception{
+	public void rental1(String uid, String umbbox_seq) throws NoRouteToHostException, ConnectException, IOException, Exception{
 		rpService.getRequestApiGet("http://172.30.1.49:8082/soleOFF");
 	}
-	public void rental2(String uid) throws NoRouteToHostException, ConnectException, IOException, Exception{
+	public void rental2(String uid, String umbbox_seq) throws NoRouteToHostException, ConnectException, IOException, Exception{
 		rpService.getRequestApiGet("http://172.30.1.49:8082/soleON");
 	}
 }
