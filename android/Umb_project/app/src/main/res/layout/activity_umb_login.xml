@@ -47,10 +47,11 @@
         android:id="@+id/btnJoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
         android:text="@string/btnJoin_text"
         app:layout_constraintStart_toStartOf="@+id/tvText"
-        app:layout_constraintTop_toBottomOf="@+id/edtPw" />
+        app:layout_constraintTop_toBottomOf="@+id/auto" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -61,4 +62,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/btnJoin"
         app:layout_constraintStart_toEndOf="@+id/btnJoin"
         app:layout_constraintTop_toTopOf="@+id/btnJoin" />
+
+    <CheckBox
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/auto_text"
+        app:layout_constraintEnd_toEndOf="@+id/edtPw"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtPw"
+        app:layout_constraintTop_toBottomOf="@+id/edtPw" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

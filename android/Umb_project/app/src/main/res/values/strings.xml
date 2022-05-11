@@ -13,6 +13,7 @@
     <string name="edtPw_hint">비밀번호</string>
     <string name="btnJoin_text">회원가입</string>
     <string name="btnLogin_text">로그인</string>
+    <string name="auto_text">자동 로그인</string>
 
     <!-- Umb_Join.xml -->
     <string name="edtJoinId_hint">아이디를 입력하시오</string>

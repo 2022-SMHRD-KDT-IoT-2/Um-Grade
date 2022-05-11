@@ -3,11 +3,16 @@ package com.example.umb_project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import android.content.Context;
 import android.content.Intent;
+
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -22,6 +27,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.umb_project.info.UserInfo;
 import com.example.umb_project.vo.User;
 
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -32,9 +38,12 @@ public class UmbLoginActivity extends AppCompatActivity {
 
     EditText edtId, edtPw;
     Button btnJoin, btnLogin;
-
+    CheckBox auto;
     RequestQueue queue;
     StringRequest request;
+
+   String user_id, user_pw;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +54,7 @@ public class UmbLoginActivity extends AppCompatActivity {
         edtPw = findViewById(R.id.edtPw);
         btnJoin = findViewById(R.id.btnJoin);
         btnLogin = findViewById(R.id.btnLogin);
+        auto = findViewById(R.id.auto);
 
         queue = Volley.newRequestQueue(UmbLoginActivity.this);
 
@@ -72,6 +82,7 @@ public class UmbLoginActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(String response) {
 
+
                                 if (response.length() > 1) {
                                     try {
                                         JSONObject jsonObject = new JSONObject(response);
@@ -89,20 +100,34 @@ public class UmbLoginActivity extends AppCompatActivity {
 
                                         User vo = new User(user_id, user_pw, user_name, user_nick, user_email, user_phone, user_joindate, user_addr, user_type, user_status, user_point);
 
-                                        Log.v("dddddd", vo.toString());
                                         UserInfo.info = vo;
 
-                                        Intent intent2 = new Intent(UmbLoginActivity.this, UmbMainActivity.class);
+                                        Intent intent = new Intent(UmbLoginActivity.this, UmbMainActivity.class);
 
-                                        intent2.putExtra("response", response);
+                                        intent.putExtra("response", response);
 
-                                        startActivity(intent2);
+                                        startActivity(intent);
 
                                         finish();
+
+                                        if(auto.isChecked()) {
+                                            if(user_id.equals(vo.getUser_id()) && user_pw.equals(vo.getUser_pw())) {
+                                                Toast.makeText(UmbLoginActivity.this,
+                                                        user_id+"님 자동로그인 입니다.",
+                                                        Toast.LENGTH_SHORT).show();
+                                                Intent intent2 = new Intent(UmbLoginActivity.this, UmbMainActivity.class);
+
+                                                intent.putExtra("response", response);
+
+                                                startActivity(intent2);
+                                            }
+                                        }
 
                                     } catch (JSONException e) {
                                         e.printStackTrace();
                                     }
+
+
                                 }
                             }
                         },
@@ -114,7 +139,7 @@ public class UmbLoginActivity extends AppCompatActivity {
                                         Toast.LENGTH_SHORT).show();
                             }
                         }
-                ){
+                ) {
                     @NonNull
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
@@ -151,4 +176,5 @@ public class UmbLoginActivity extends AppCompatActivity {
         });
 
     }
+
 }

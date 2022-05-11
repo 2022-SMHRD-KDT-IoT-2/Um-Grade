@@ -81,9 +81,7 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        User user = UserInfo.info;
-                        tvUser1.setText(user.getUser_id());
-                        tvUserPoint2.setText(user.getUser_point());
+
 
                         getAppKeyHash();
                         initView();
@@ -137,6 +135,16 @@ public class UmbMainActivity extends AppCompatActivity implements MapView.MapVie
                         }
                 );
                 queue.add(request);
+            }
+        });
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+
             }
         });
     }

@@ -31,7 +31,7 @@ public class AndroidController {
 	}
 
 	// 유저로그인
-	@RequestMapping(value = "/Login", method = RequestMethod.POST)
+	@RequestMapping(value = "/Login")
 	public User userLogin(User user) {
 		System.out.println("로그인 접근 감지");
 		User info = service.userLogin(user);

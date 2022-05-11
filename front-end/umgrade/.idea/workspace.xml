@@ -12,13 +12,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04300256-93a6-4c8f-bda6-c77a30098718" name="Default Changelist" comment="" />
+    <list default="true" id="04300256-93a6-4c8f-bda6-c77a30098718" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../android/Umb_project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/Umb_project/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/Umb_project/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/Umb_project/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/java/com/example/umb_project/UmbLoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/java/com/example/umb_project/UmbLoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/java/com/example/umb_project/UmbMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/java/com/example/umb_project/UmbMainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/java/com/example/umb_project/UmbMypageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/java/com/example/umb_project/UmbMypageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/res/layout/activity_umb_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/res/layout/activity_umb_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/Umb_project/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back-end/Umb_project/src/main/java/kr/smhrd/myapp/AndroidController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../back-end/Umb_project/src/main/java/kr/smhrd/myapp/AndroidController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back-end/Umb_project/target/classes/kr/smhrd/myapp/AndroidController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../back-end/Umb_project/target/classes/kr/smhrd/myapp/AndroidController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back-end/Umb_project/target/m2e-wtp/web-resources/META-INF/maven/kr.smhrd/myapp/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../back-end/Umb_project/target/m2e-wtp/web-resources/META-INF/maven/kr.smhrd/myapp/pom.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\smhrd\.android\avd\MyApp.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[2710cda833217ece]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

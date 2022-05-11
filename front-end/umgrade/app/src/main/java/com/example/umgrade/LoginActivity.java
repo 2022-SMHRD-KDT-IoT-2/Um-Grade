@@ -116,8 +116,8 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         Map<String,String> param = new HashMap<>();
-                        param.put("id", edtLoginId.getText().toString());
-                        param.put("pw", edtLoginPw.getText().toString());
+                        param.put("user_id", edtLoginId.getText().toString());
+                        param.put("user_pw", edtLoginPw.getText().toString());
                         return param;
                     }
                 };

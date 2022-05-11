@@ -38,18 +38,7 @@ public class UmbMypageActivity extends AppCompatActivity {
 
         queue = Volley.newRequestQueue(UmbMypageActivity.this);
 
-        User user = UserInfo.info;
 
-        infoId.setText(user.getUser_id());
-        infoName.setText(user.getUser_name());
-        infoNick.setText(user.getUser_nick());
-        infoEmail.setText(user.getUser_email());
-        infoPhone.setText(user.getUser_phone());
-        infoJoindate.setText(user.getUser_joindate());
-        infoAddr.setText(user.getUser_addr());
-        infoType.setText(user.getUser_type());
-        infoStatus.setText(user.getUser_status());
-        infoPoint.setText(user.getUser_point());
 
     }
 }
