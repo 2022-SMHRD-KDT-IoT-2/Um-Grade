@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_commu).commit();
                 }
 
-                return false;
+                return true;
             }
         });
 
