@@ -21,20 +21,14 @@ public interface RentMapper {
 	// 대여시간 조회 (반납 이후)
 	public int selectRentTime2(Rent vo);
 	
+	// RFID로 미반납 대여정보 추출
+	public Rent selectOneRfid(String umb_rfid);
+	
 	// 대여정보 추가
 	public void insertRent(Rent vo);
 	
-	// 반납 시 반납일자 수정
-	public void updateRentReturn(int rent_seq);
-	
-	// 결제금액 수정
-	public void updateRentPayAmount(Rent vo);
-	
-	// 결제수단 수정
-	public void updateRentPayMethod(Rent vo);
-	
-	// 결제여부 수정
-	public void updateRentPayDone(Rent vo);
+	// 반납 시 반납일자 + 결제내역 수정
+	public void updateRentReturn(Rent vo);
 	
 	// 대여정보 삭제
 	public void deleteRent(int rent_seq);

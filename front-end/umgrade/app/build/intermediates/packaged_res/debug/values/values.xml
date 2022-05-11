@@ -22,6 +22,7 @@
     <dimen name="newsMoreTextSize">12sp</dimen>
     <dimen name="signup_text_margin_top">10dp</dimen>
     <string name="app_name">UM-CYCLE</string>
+    <string name="btnFare">UM-CYCLE 이용 요금 안내</string>
     <string name="btnIdCheck">중복확인</string>
     <string name="btnJoin">가입하기</string>
     <string name="btnKakaoLogin">카카오로 시작하기</string>
@@ -44,7 +45,6 @@
     <string name="fragMain">홈</string>
     <string name="fragMore">더보기</string>
     <string name="fragMyPage">마이페이지</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_join">JoinActivity</string>
     <string name="tvJoin">회원가입하기</string>
     <string name="tvJoinTitle">회원가입</string>

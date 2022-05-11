@@ -32,6 +32,7 @@
     <string name="fragCommu">커뮤니티</string>
     <string name="fragMyPage">마이페이지</string>
     <string name="fragMore">더보기</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <!-- fragment_main -->
+    <string name="btnFare">UM-CYCLE 이용 요금 안내</string>
 </resources>

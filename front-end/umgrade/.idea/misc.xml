@@ -3,18 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable/arroaright_resize.xml" value="0.1" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable/frag_color.xml" value="0.1" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable/ic_login_bk.xml" value="0.1" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable/login_shape_bk.xml" value="0.1" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable/map_background.xml" value="0.1" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout-w1240dp/activity_join.xml" value="0.25" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout-w936dp/activity_join.xml" value="0.67" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/activity_join.xml" value="0.5" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/activity_main.xml" value="0.225" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/frag_color.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_commu.xml" value="0.225" />
-        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_main.xml" value="0.225" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_main.xml" value="0.33" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_mypage.xml" value="0.3074074074074074" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/layout_login.xml" value="0.33" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/layout_register.xml" value="0.25" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/layout_resister.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/map_card.xml" value="0.3074074074074074" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/mypage_card.xml" value="0.3074074074074074" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/qr_card.xml" value="0.3375" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/service_card.xml" value="0.3375" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/support_card.xml" value="0.3375" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/menu/frag_menu.xml" value="0.225" />
         <entry key="..\:/Users/smhrd/Desktop/Um_project/front-end/umgrade/app/src/main/res/layout/activity_join.xml" value="0.33" />
         <entry key="..\:/Users/smhrd/Desktop/Um_project/front-end/umgrade/app/src/main/res/layout/activity_login.xml" value="0.16843971631205673" />

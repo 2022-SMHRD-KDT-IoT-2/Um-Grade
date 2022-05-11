@@ -67,9 +67,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -88,15 +88,19 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../umgrade_backup" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\res\layout" />
+      <recent name="C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\res\drawable" />
       <recent name="C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\java\vo" />
       <recent name="C:\Users\smhrd\Desktop\Um_project\front-end\umgrade\app\src\main\java\info" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\res\drawable" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">

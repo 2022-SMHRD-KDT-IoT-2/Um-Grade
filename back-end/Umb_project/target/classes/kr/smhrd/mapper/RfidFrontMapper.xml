@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.RfidFrontMapper">
+
+	<insert id="insertLog" parameterType="String">
+		insert into t_frfid(rfid_uid) values (#{rfid_uid})
+	</insert>
+	
+	<!-- 반대편 최근로그 1개의 uid -->
+	<select id ="selectCheck" resultType = "String">
+		SELECT rfid_uid from t_brfid ORDER BY rfid_date DESC LIMIT 1
+	</select>
+	
+	<!-- 앞 뒤 최근로그 1개 일치 체크 -->
+	<select id ="selectSame" resultType="java.lang.Boolean">
+		SELECT IF((SELECT rfid_uid from t_frfid ORDER BY rfid_date DESC LIMIT 1)=(SELECT rfid_uid from t_brfid ORDER BY rfid_date DESC LIMIT 1), true, false) AS result
+	</select>
+		
+	<!-- 최근 로그 2개 시차 계산 -->
+	<select id ="selectDiff"  resultType="int">
+		SELECT TIMESTAMPDIFF(
+		SECOND,
+		(SELECT rfid_date from t_frfid ORDER BY rfid_date DESC LIMIT 1),
+			(SELECT rfid_date from t_brfid ORDER BY rfid_date DESC LIMIT 1)
+			) AS RESULT
+	</select>
+	
+	
+</mapper>
