@@ -82,7 +82,7 @@
                 android:orientation="horizontal">
 
                 <include
-                    layout="@layout/map_card"
+                    layout="@layout/service_card"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="5dp"
