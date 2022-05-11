@@ -25,7 +25,7 @@ public class PayController {
 	// 파라미터 4개 (billingKey, customereKey, amount, orderId), 테스트용 [수정할 예정 : 반납 절차와 통합]
 	@RequestMapping("/auto")
 	public String auto() {
-		service.auto();
+		//service.auto();
 		return "auto";
 	}
 }

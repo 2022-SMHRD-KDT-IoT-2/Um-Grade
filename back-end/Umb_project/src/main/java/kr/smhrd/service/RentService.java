@@ -40,24 +40,10 @@ public class RentService {
 	}
 	
 	// 반납 시 반납일자 수정
-	public void updateRentReturn(int rent_seq) {
-		mapper.updateRentReturn(rent_seq);
+	public void updateRentReturn(Rent vo) {
+		mapper.updateRentReturn(vo);
 	}
 	
-	// 결제금액 수정
-	public void updateRentPayAmount(Rent vo) {
-		mapper.updateRentPayAmount(vo);
-	}
-	
-	// 결제수단 수정
-	public void updateRentPayMethod(Rent vo) {
-		mapper.updateRentPayMethod(vo);
-	}
-	
-	// 결제여부 수정
-	public void updateRentPayDone(Rent vo) {
-		mapper.updateRentPayDone(vo);
-	}
 	
 	// 대여정보 삭제
 	public void deleteRent(int rent_seq){
