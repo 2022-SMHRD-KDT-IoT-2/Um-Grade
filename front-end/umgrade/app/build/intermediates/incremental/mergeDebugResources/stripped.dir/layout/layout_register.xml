@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor"
+    android:elevation="5dp"
+    android:theme="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:padding="@dimen/loginViewsMargin"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/umbrella" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtJoinId"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="@string/edtJoinId"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnIdCheck"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#2196F3"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/btnIdCheck"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtJoinPw"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinPw"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtJoinPwCheck"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinPwCheck"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtJoinNick"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinNick"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtJoinEmail"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinEmail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtJoinName"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinName"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtJoinPhone"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinPhone"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtJoinAddr"
+            style="@style/modifiedEditText"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/edtJoinAddr"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/ckAllCheck"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_weight="1"
+            android:buttonTint="#77A9D5"
+            android:text="@string/ckAllCheck"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ckTerms"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:buttonTint="#77A9D5"
+                android:text="@string/ckTerms"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvMoreOne"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:gravity="center|right"
+                android:paddingRight="7dp"
+                android:text="@string/tvMore"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ckPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:buttonTint="#77A9D5"
+                android:text="@string/ckPersonal"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvMoreTwo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:gravity="center|right"
+                android:paddingRight="7dp"
+                android:text="@string/tvMore"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/ckMarketing"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:buttonTint="#77A9D5"
+            android:text="@string/ckMarketing"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnJoin"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:backgroundTint="#B9B7BD"
+            android:clickable="false"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btnJoin"
+            android:textColor="#888888"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

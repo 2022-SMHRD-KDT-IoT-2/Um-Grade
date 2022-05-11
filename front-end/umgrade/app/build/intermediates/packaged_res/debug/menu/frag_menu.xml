@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/fragMain"
-        android:icon="@android:drawable/ic_dialog_dialer"
+        android:icon="@drawable/home"
         android:title="@string/fragMain" />
     <item
         android:id="@+id/fragCommu"
-        android:icon="@android:drawable/ic_menu_agenda"
+        android:icon="@drawable/community"
         android:title="@string/fragCommu" />
     <item
         android:id="@+id/fragMyPage"
-        android:icon="@android:drawable/ic_menu_myplaces"
+        android:icon="@drawable/mypage"
         android:title="@string/fragMyPage" />
     <item
         android:id="@+id/fragMore"
-        android:icon="@android:drawable/ic_menu_manage"
+        android:icon="@drawable/more"
         android:title="@string/fragMore" />
 </menu>

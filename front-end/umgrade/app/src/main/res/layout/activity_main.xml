@@ -23,7 +23,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:menu="@menu/frag_menu" />
+        app:menu="@menu/frag_menu"
+        app:itemIconTint="@drawable/frag_color"
+        app:itemTextColor="@drawable/frag_color"
+        />
 
     <FrameLayout
         android:id="@+id/container"

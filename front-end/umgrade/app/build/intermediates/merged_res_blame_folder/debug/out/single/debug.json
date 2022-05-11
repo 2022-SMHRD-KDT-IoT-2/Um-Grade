@@ -4,6 +4,10 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\layout_register.xml"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_frag_color.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\frag_color.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_commu.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\fragment_commu.xml"
     },
@@ -24,12 +28,20 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\ic_login_bk.xml"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_menu.png.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\menu.png"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\menu_frag_menu.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\menu\\frag_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_more.png.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\more.png"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_main.xml.flat",
@@ -40,8 +52,16 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_home.png.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_community.png.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\community.png"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -94,6 +114,10 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_mypage.png.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\mypage.png"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
