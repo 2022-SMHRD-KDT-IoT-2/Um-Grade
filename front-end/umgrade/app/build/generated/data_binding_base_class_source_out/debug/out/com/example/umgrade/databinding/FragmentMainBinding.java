@@ -5,9 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
@@ -17,19 +19,28 @@ import java.lang.String;
 
 public final class FragmentMainBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button2;
+  public final Button btnFare;
 
-  private FragmentMainBinding(@NonNull FrameLayout rootView, @NonNull Button button2) {
+  @NonNull
+  public final ImageView mainLogo;
+
+  @NonNull
+  public final ScrollView mainScroll;
+
+  private FragmentMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnFare,
+      @NonNull ImageView mainLogo, @NonNull ScrollView mainScroll) {
     this.rootView = rootView;
-    this.button2 = button2;
+    this.btnFare = btnFare;
+    this.mainLogo = mainLogo;
+    this.mainScroll = mainScroll;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +65,25 @@ public final class FragmentMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button2;
-      Button button2 = ViewBindings.findChildViewById(rootView, id);
-      if (button2 == null) {
+      id = R.id.btnFare;
+      Button btnFare = ViewBindings.findChildViewById(rootView, id);
+      if (btnFare == null) {
         break missingId;
       }
 
-      return new FragmentMainBinding((FrameLayout) rootView, button2);
+      id = R.id.mainLogo;
+      ImageView mainLogo = ViewBindings.findChildViewById(rootView, id);
+      if (mainLogo == null) {
+        break missingId;
+      }
+
+      id = R.id.mainScroll;
+      ScrollView mainScroll = ViewBindings.findChildViewById(rootView, id);
+      if (mainScroll == null) {
+        break missingId;
+      }
+
+      return new FragmentMainBinding((ConstraintLayout) rootView, btnFare, mainLogo, mainScroll);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

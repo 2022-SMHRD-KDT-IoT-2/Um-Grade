@@ -2471,6 +2471,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arroaright_resize
+drawable arrowright
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -2674,11 +2676,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnFare
 id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
-id button2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2843,6 +2845,8 @@ id line3
 id linear
 id listMode
 id list_item
+id mainLogo
+id mainScroll
 id masked
 id match_constraint
 id match_parent
@@ -3319,6 +3323,7 @@ string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string btnFare
 string btnIdCheck
 string btnJoin
 string btnKakaoLogin
@@ -3368,7 +3373,6 @@ string fragCommu
 string fragMain
 string fragMore
 string fragMyPage
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

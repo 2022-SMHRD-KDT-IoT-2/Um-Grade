@@ -21,6 +21,8 @@ dimen loginCardRadius
 dimen loginViewsMargin
 dimen newsMoreTextSize
 dimen signup_text_margin_top
+drawable arroaright_resize
+drawable arrowright
 drawable community
 drawable frag_color
 drawable home
@@ -33,11 +35,11 @@ drawable more
 drawable mypage
 drawable umbrella
 id bottomNav
+id btnFare
 id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
-id button2
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -59,6 +61,8 @@ id fragMore
 id fragMyPage
 id guideline2
 id imgLogo
+id mainLogo
+id mainScroll
 id scrollView2
 id tvJoin
 id tvJoinTitle
@@ -76,6 +80,7 @@ menu frag_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string btnFare
 string btnIdCheck
 string btnJoin
 string btnKakaoLogin
@@ -98,7 +103,6 @@ string fragCommu
 string fragMain
 string fragMore
 string fragMyPage
-string hello_blank_fragment
 string title_activity_join
 string tvJoin
 string tvJoinTitle
