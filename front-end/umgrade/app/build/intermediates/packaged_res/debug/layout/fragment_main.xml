@@ -35,7 +35,7 @@
                 android:id="@+id/btnFare"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:backgroundTint="#2196F3"
                 android:drawableRight="@drawable/arroaright_resize"
                 android:drawableTint="@color/white"
@@ -57,7 +57,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
                 <include
@@ -73,6 +73,28 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <include
+                    layout="@layout/service_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1" />
+
+                <include
+                    layout="@layout/support_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" />
+
             </LinearLayout>
 
         </LinearLayout>
