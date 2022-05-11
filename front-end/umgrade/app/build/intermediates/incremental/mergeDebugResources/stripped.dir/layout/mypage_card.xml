@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/loginCardRadius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <TextView
+            android:id="@+id/tvNickMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tvNickMypageCard"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvWelcomeMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="left"
+            android:text="@string/tvWelcomeMypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNickMypageCard"
+            app:layout_constraintStart_toEndOf="@+id/tvNickMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvNickMypageCard" />
+
+        <TextView
+            android:id="@+id/tvComment1MypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tvComment1MypageCard"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/tvNickMypageCard" />
+
+        <TextView
+            android:id="@+id/tvCarbonMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="left"
+            android:text="@string/tvCarbonMypageCard"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvComment1MypageCard"
+            app:layout_constraintStart_toEndOf="@+id/tvComment1MypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvComment1MypageCard" />
+
+        <TextView
+            android:id="@+id/tvComment2MypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:gravity="left"
+            android:text="@string/tvComment2MypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCarbonMypageCard"
+            app:layout_constraintStart_toEndOf="@+id/tvCarbonMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvCarbonMypageCard" />
+
+        <ImageView
+            android:id="@+id/imgMypageProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mypage" />
+
+        <TextView
+            android:id="@+id/tvRatingTextMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="right"
+            android:text="@string/tvRatingTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvRatingMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvComment1MypageCard" />
+
+        <TextView
+            android:id="@+id/tvRatingMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="left"
+            android:text="@string/tvRatingMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvRatingTextMypageCard" />
+
+        <TextView
+            android:id="@+id/tvPointTextMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tvPointTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRatingMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvPointMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvRatingMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvRatingMypageCard" />
+
+        <TextView
+            android:id="@+id/tvPointMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="left"
+            android:text="@string/tvPointMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvPointTextMypageCard" />
+
+        <TextView
+            android:id="@+id/tvCouponTextMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tvCouponTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPointMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvCouponMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvPointMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvPointMypageCard" />
+
+        <TextView
+            android:id="@+id/tvCouponMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:gravity="left"
+            android:text="@string/tvCouponMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvCouponTextMypageCard" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="390dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvComment1MypageCard"
+            app:layout_constraintVertical_bias="0.622" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/closed_umbrella" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

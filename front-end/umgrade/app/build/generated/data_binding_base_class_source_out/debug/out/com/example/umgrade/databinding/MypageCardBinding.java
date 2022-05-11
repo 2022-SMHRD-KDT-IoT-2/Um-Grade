@@ -21,46 +21,70 @@ public final class MypageCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final ImageView imageView2;
+  public final View divider;
 
   @NonNull
-  public final TextView textView10;
+  public final ImageView imageView3;
 
   @NonNull
-  public final TextView textView11;
+  public final ImageView imgMypageProfile;
 
   @NonNull
-  public final TextView textView12;
+  public final TextView tvCarbonMypageCard;
 
   @NonNull
-  public final TextView textView13;
+  public final TextView tvComment1MypageCard;
 
   @NonNull
-  public final TextView textView14;
+  public final TextView tvComment2MypageCard;
 
   @NonNull
-  public final TextView textView15;
+  public final TextView tvCouponMypageCard;
 
   @NonNull
-  public final TextView textView2;
+  public final TextView tvCouponTextMypageCard;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView tvNickMypageCard;
 
-  private MypageCardBinding(@NonNull CardView rootView, @NonNull ImageView imageView2,
-      @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView12,
-      @NonNull TextView textView13, @NonNull TextView textView14, @NonNull TextView textView15,
-      @NonNull TextView textView2, @NonNull TextView textView3) {
+  @NonNull
+  public final TextView tvPointMypageCard;
+
+  @NonNull
+  public final TextView tvPointTextMypageCard;
+
+  @NonNull
+  public final TextView tvRatingMypageCard;
+
+  @NonNull
+  public final TextView tvRatingTextMypageCard;
+
+  @NonNull
+  public final TextView tvWelcomeMypageCard;
+
+  private MypageCardBinding(@NonNull CardView rootView, @NonNull View divider,
+      @NonNull ImageView imageView3, @NonNull ImageView imgMypageProfile,
+      @NonNull TextView tvCarbonMypageCard, @NonNull TextView tvComment1MypageCard,
+      @NonNull TextView tvComment2MypageCard, @NonNull TextView tvCouponMypageCard,
+      @NonNull TextView tvCouponTextMypageCard, @NonNull TextView tvNickMypageCard,
+      @NonNull TextView tvPointMypageCard, @NonNull TextView tvPointTextMypageCard,
+      @NonNull TextView tvRatingMypageCard, @NonNull TextView tvRatingTextMypageCard,
+      @NonNull TextView tvWelcomeMypageCard) {
     this.rootView = rootView;
-    this.imageView2 = imageView2;
-    this.textView10 = textView10;
-    this.textView11 = textView11;
-    this.textView12 = textView12;
-    this.textView13 = textView13;
-    this.textView14 = textView14;
-    this.textView15 = textView15;
-    this.textView2 = textView2;
-    this.textView3 = textView3;
+    this.divider = divider;
+    this.imageView3 = imageView3;
+    this.imgMypageProfile = imgMypageProfile;
+    this.tvCarbonMypageCard = tvCarbonMypageCard;
+    this.tvComment1MypageCard = tvComment1MypageCard;
+    this.tvComment2MypageCard = tvComment2MypageCard;
+    this.tvCouponMypageCard = tvCouponMypageCard;
+    this.tvCouponTextMypageCard = tvCouponTextMypageCard;
+    this.tvNickMypageCard = tvNickMypageCard;
+    this.tvPointMypageCard = tvPointMypageCard;
+    this.tvPointTextMypageCard = tvPointTextMypageCard;
+    this.tvRatingMypageCard = tvRatingMypageCard;
+    this.tvRatingTextMypageCard = tvRatingTextMypageCard;
+    this.tvWelcomeMypageCard = tvWelcomeMypageCard;
   }
 
   @Override
@@ -90,62 +114,94 @@ public final class MypageCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
+      id = R.id.divider;
+      View divider = ViewBindings.findChildViewById(rootView, id);
+      if (divider == null) {
         break missingId;
       }
 
-      id = R.id.textView10;
-      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
-      if (textView10 == null) {
+      id = R.id.imageView3;
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView3 == null) {
         break missingId;
       }
 
-      id = R.id.textView11;
-      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
-      if (textView11 == null) {
+      id = R.id.imgMypageProfile;
+      ImageView imgMypageProfile = ViewBindings.findChildViewById(rootView, id);
+      if (imgMypageProfile == null) {
         break missingId;
       }
 
-      id = R.id.textView12;
-      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
-      if (textView12 == null) {
+      id = R.id.tvCarbonMypageCard;
+      TextView tvCarbonMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvCarbonMypageCard == null) {
         break missingId;
       }
 
-      id = R.id.textView13;
-      TextView textView13 = ViewBindings.findChildViewById(rootView, id);
-      if (textView13 == null) {
+      id = R.id.tvComment1MypageCard;
+      TextView tvComment1MypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvComment1MypageCard == null) {
         break missingId;
       }
 
-      id = R.id.textView14;
-      TextView textView14 = ViewBindings.findChildViewById(rootView, id);
-      if (textView14 == null) {
+      id = R.id.tvComment2MypageCard;
+      TextView tvComment2MypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvComment2MypageCard == null) {
         break missingId;
       }
 
-      id = R.id.textView15;
-      TextView textView15 = ViewBindings.findChildViewById(rootView, id);
-      if (textView15 == null) {
+      id = R.id.tvCouponMypageCard;
+      TextView tvCouponMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvCouponMypageCard == null) {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
+      id = R.id.tvCouponTextMypageCard;
+      TextView tvCouponTextMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvCouponTextMypageCard == null) {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.tvNickMypageCard;
+      TextView tvNickMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvNickMypageCard == null) {
         break missingId;
       }
 
-      return new MypageCardBinding((CardView) rootView, imageView2, textView10, textView11,
-          textView12, textView13, textView14, textView15, textView2, textView3);
+      id = R.id.tvPointMypageCard;
+      TextView tvPointMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvPointMypageCard == null) {
+        break missingId;
+      }
+
+      id = R.id.tvPointTextMypageCard;
+      TextView tvPointTextMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvPointTextMypageCard == null) {
+        break missingId;
+      }
+
+      id = R.id.tvRatingMypageCard;
+      TextView tvRatingMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvRatingMypageCard == null) {
+        break missingId;
+      }
+
+      id = R.id.tvRatingTextMypageCard;
+      TextView tvRatingTextMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvRatingTextMypageCard == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWelcomeMypageCard;
+      TextView tvWelcomeMypageCard = ViewBindings.findChildViewById(rootView, id);
+      if (tvWelcomeMypageCard == null) {
+        break missingId;
+      }
+
+      return new MypageCardBinding((CardView) rootView, divider, imageView3, imgMypageProfile,
+          tvCarbonMypageCard, tvComment1MypageCard, tvComment2MypageCard, tvCouponMypageCard,
+          tvCouponTextMypageCard, tvNickMypageCard, tvPointMypageCard, tvPointTextMypageCard,
+          tvRatingMypageCard, tvRatingTextMypageCard, tvWelcomeMypageCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -140,6 +140,10 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_closed_umbrella.png.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\closed_umbrella.png"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_arrowright.png.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\arrowright.png"
     },

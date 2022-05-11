@@ -47,4 +47,17 @@
 
     <!-- support_card.xml -->
     <string name="btnSupportCard">고객센터</string>
+
+    <!-- mypage_card.xml -->
+    <string name="tvNickMypageCard">USER</string>
+    <string name="tvWelcomeMypageCard">님 환영합니다!</string>
+    <string name="tvComment1MypageCard">오늘까지 총</string>
+    <string name="tvCarbonMypageCard">692g</string>
+    <string name="tvComment2MypageCard">의 탄소 절약!</string>
+    <string name="tvRatingTextMypageCard">회원 등급</string>
+    <string name="tvRatingMypageCard">U</string>
+    <string name="tvPointTextMypageCard">보유 포인트</string>
+    <string name="tvPointMypageCard">100p</string>
+    <string name="tvCouponTextMypageCard">보유 쿠폰</string>
+    <string name="tvCouponMypageCard">1개</string>
 </resources>
