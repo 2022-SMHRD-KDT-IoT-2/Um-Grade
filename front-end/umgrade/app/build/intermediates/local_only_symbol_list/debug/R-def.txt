@@ -91,6 +91,7 @@ layout layout_login
 layout layout_register
 layout map_card
 layout mypage_card
+layout qr_card
 menu frag_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
