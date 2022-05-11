@@ -37,6 +37,7 @@ id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
+id button2
 id ckAllCheck
 id ckMarketing
 id ckPersonal

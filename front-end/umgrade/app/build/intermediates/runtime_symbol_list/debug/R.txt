@@ -2677,6 +2677,7 @@ int id btnIdCheck 0x7f080066
 int id btnJoin 0x7f080067
 int id btnKakaoLogin 0x7f080068
 int id btnLogin 0x7f080069
+int id button2 0x7f080206
 int id buttonPanel 0x7f08006a
 int id cache_measures 0x7f08006b
 int id callMeasure 0x7f08006c
