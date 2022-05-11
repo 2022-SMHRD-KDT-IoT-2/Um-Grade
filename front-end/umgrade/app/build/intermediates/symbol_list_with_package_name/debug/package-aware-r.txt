@@ -2533,6 +2533,8 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable map_background
+drawable mapimg
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2681,6 +2683,7 @@ id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2820,6 +2823,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView2
+id imageView3
 id imgLogo
 id immediateStop
 id included
@@ -3042,6 +3047,14 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView10
+id textView11
+id textView12
+id textView13
+id textView14
+id textView15
+id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3207,6 +3220,7 @@ layout layout_register
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
+layout map_card
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -3250,6 +3264,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout mypage_card
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

@@ -30,6 +30,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_login_bk
 drawable login_shape_bk
+drawable map_background
+drawable mapimg
 drawable menu
 drawable more
 drawable mypage
@@ -40,6 +42,7 @@ id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
+id button
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -60,10 +63,20 @@ id fragMain
 id fragMore
 id fragMyPage
 id guideline2
+id imageView2
+id imageView3
 id imgLogo
 id mainLogo
 id mainScroll
 id scrollView2
+id textView10
+id textView11
+id textView12
+id textView13
+id textView14
+id textView15
+id textView2
+id textView3
 id tvJoin
 id tvJoinTitle
 id tvMoreOne
@@ -76,6 +89,8 @@ layout fragment_main
 layout fragment_mypage
 layout layout_login
 layout layout_register
+layout map_card
+layout mypage_card
 menu frag_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

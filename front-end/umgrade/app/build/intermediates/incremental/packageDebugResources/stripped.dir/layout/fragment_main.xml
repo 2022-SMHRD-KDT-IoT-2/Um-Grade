@@ -35,7 +35,7 @@
                 android:id="@+id/btnFare"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="#2196F3"
                 android:drawableRight="@drawable/arroaright_resize"
                 android:drawableTint="@color/white"
@@ -47,6 +47,34 @@
                 android:textAlignment="textStart"
                 android:textSize="10sp"
                 app:cornerRadius="7dp" />
+
+            <include
+                layout="@layout/mypage_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <include
+                    layout="@layout/map_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1" />
+
+                <include
+                    layout="@layout/map_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
