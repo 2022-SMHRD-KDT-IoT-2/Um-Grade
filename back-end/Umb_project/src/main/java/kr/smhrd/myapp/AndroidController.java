@@ -1,5 +1,7 @@
 package kr.smhrd.myapp;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -40,12 +42,16 @@ public class AndroidController {
 	}
 
 	// 우산대여요청
-	@RequestMapping(value = "/Rent", method = RequestMethod.POST)
-	public User umbRent(User user) {
-		System.out.println("로그인 접근 감지");
-		User info = service.userLogin(user);
+			@RequestMapping(value = "/Rent", method = RequestMethod.POST)
+			public void umbRent(HttpServletRequest httpServletRequest) {
+				System.out.println("대여 감지");
+				String get_url = httpServletRequest.getParameter("qrNum");
+				String get_userId = httpServletRequest.getParameter("userId");
+				System.out.println("대여 URL : " + get_url);
+				System.out.println("대여 User : " + get_userId);
+				
+//				Rentservice.insertRent(null);
 
-		return info;
-	}
+			}
 
 }

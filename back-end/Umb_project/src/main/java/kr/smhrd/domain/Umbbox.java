@@ -18,5 +18,6 @@ public class Umbbox {
 	private String ubox_inst_dt; // 보관함 설치일자
 	private String admin_id; // 보관함 관리자
 	private String ubox_check; // 보관함 점검일자
+	private String ubox_id; // 사용자 ID
 	
 }
