@@ -20,4 +20,21 @@ public class RfidFrontService {
 		List<Rfid> list = mapper.selectRfid();
 		return list;
 	}
+	
+	public void insertLog(Rfid vo) {
+		mapper.insertLog(vo);
+	}
+	
+	public String selectCheck() {
+		return mapper.selectCheck();
+	}
+	
+	public boolean selectSame() {
+		return mapper.selectSame();
+	}
+	
+	public int selectDiff() {
+		return mapper.selectDiff();
+	}
+	
 }

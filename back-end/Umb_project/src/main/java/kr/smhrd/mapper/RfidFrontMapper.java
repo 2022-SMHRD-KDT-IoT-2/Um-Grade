@@ -11,4 +11,10 @@ public interface RfidFrontMapper {
 	
 	public void insertLog(Rfid vo);
 	
+	public String selectCheck();
+	
+	public boolean selectSame();
+	
+	public int selectDiff();
+	
 }
