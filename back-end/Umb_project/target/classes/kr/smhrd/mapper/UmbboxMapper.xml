@@ -30,6 +30,14 @@
 		update t_umbbox set ubox_check = now() where ubox_seq = #{ubox_seq}
 	</update>
 	
+	<update id="updateUboxID" parameterType="kr.smhrd.domain.Umbbox">
+		update t_umbbox set ubox_id = #{ubox_id} where ubox_seq = #{ubox_seq}
+	</update>
+	
+	<update id="updateUboxID2" parameterType="String">
+		update t_umbbox set ubox_id = 'D' where ubox_id = #{ubox_id}
+	</update>
+	
 	<delete id="deleteUbox" parameterType = "int">
 		delete from t_umbbox where ubox_seq = #{ubox_seq}
 	</delete>
