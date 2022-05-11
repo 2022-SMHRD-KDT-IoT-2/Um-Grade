@@ -2499,6 +2499,7 @@ int drawable common_google_signin_btn_text_light 0x7f07006f
 int drawable common_google_signin_btn_text_light_focused 0x7f070070
 int drawable common_google_signin_btn_text_light_normal 0x7f070071
 int drawable common_google_signin_btn_text_light_normal_background 0x7f070072
+int drawable community 0x7f0700b5
 int drawable design_fab_background 0x7f070073
 int drawable design_ic_visibility 0x7f070074
 int drawable design_ic_visibility_off 0x7f070075
@@ -2506,6 +2507,7 @@ int drawable design_password_eye 0x7f070076
 int drawable design_snackbar_background 0x7f070077
 int drawable googleg_disabled_color_18 0x7f070078
 int drawable googleg_standard_color_18 0x7f070079
+int drawable home 0x7f0700b6
 int drawable ic_clock_black_24dp 0x7f07007a
 int drawable ic_keyboard_black_24dp 0x7f07007b
 int drawable ic_launcher_background 0x7f07007c
@@ -2537,6 +2539,8 @@ int drawable material_ic_keyboard_arrow_previous_black_24dp 0x7f070095
 int drawable material_ic_keyboard_arrow_right_black_24dp 0x7f070096
 int drawable material_ic_menu_arrow_down_black_24dp 0x7f070097
 int drawable material_ic_menu_arrow_up_black_24dp 0x7f070098
+int drawable menu 0x7f0700b7
+int drawable more 0x7f0700b8
 int drawable mtrl_dialog_background 0x7f070099
 int drawable mtrl_dropdown_arrow 0x7f07009a
 int drawable mtrl_ic_arrow_drop_down 0x7f07009b
@@ -2547,6 +2551,7 @@ int drawable mtrl_navigation_bar_item_background 0x7f07009f
 int drawable mtrl_popupmenu_background 0x7f0700a0
 int drawable mtrl_popupmenu_background_overlay 0x7f0700a1
 int drawable mtrl_tabs_default_indicator 0x7f0700a2
+int drawable mypage 0x7f0700b9
 int drawable navigation_empty_icon 0x7f0700a3
 int drawable notification_action_background 0x7f0700a4
 int drawable notification_bg 0x7f0700a5

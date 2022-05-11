@@ -21,10 +21,15 @@ dimen loginCardRadius
 dimen loginViewsMargin
 dimen newsMoreTextSize
 dimen signup_text_margin_top
+drawable community
+drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_login_bk
 drawable login_shape_bk
+drawable menu
+drawable more
+drawable mypage
 drawable umbrella
 id bottomNav
 id btnIdCheck
