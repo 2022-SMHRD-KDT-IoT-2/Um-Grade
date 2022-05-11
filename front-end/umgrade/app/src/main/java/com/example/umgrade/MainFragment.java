@@ -20,6 +20,7 @@ public class MainFragment extends Fragment {
 
         btnFare = view.findViewById(R.id.btnFare);
 
+
         // 로그인 시 btnFare에 "오늘까지의 UM-CYCLE 이용 요금은 n,nnn원 입니다." 출력
         btnFare.setOnClickListener(new View.OnClickListener() {
             @Override
