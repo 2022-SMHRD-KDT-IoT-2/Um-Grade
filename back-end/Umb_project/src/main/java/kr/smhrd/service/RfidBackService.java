@@ -5,16 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kr.smhrd.domain.Rfid;
-import kr.smhrd.domain.Umbbox;
-import kr.smhrd.mapper.RfidFrontMapper;
+import kr.smhrd.mapper.RfidBackMapper;
 
 
 
 @Service
-public class RfidFrontService {
+public class RfidBackService {
 
 	@Autowired
-	private RfidFrontMapper mapper;
+	private RfidBackMapper mapper;
 	
 	public List<Rfid> selectRfid() {
 		List<Rfid> list = mapper.selectRfid();

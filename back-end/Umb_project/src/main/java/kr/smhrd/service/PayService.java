@@ -28,9 +28,9 @@ public class PayService {
 		System.out.println(map.get("billingKey"));
 	}
 	
-	public void auto() {
-		String bk = uMapper.selectUserBK("abc");
-		HttpResponse<String> response = jService.auto(bk, "abc", 7000, "9991");
+	public void auto(String user_id, int amount, String order_id) {
+		String bk = uMapper.selectUserBK(user_id);
+		HttpResponse<String> response = jService.auto(bk, user_id, amount, order_id);
 		Map<String, String> map = jService.mapJson(response.body());
 		System.out.println(map.get("status"));
 	}

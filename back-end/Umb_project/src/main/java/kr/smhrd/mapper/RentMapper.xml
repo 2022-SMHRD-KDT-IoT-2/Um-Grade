@@ -14,26 +14,18 @@
 		select timestampdiff(hour, rent_s_date, #{rent_e_date}) from t_rent where rent_seq = #{rent_seq}
 	</select>
 	
+	<select id ="selectOneRfid" parameterType = "String" resultType = "kr.smhrd.domain.Rent">
+		select * from t_rent where pay_amount = -1 and umb_seq = (select umb_seq from t_umbrella where umb_rfid = #{umb_rfid})
+	</select>
+	
 	<insert id="insertRent" parameterType="kr.smhrd.domain.Rent">
 		insert into t_rent(rent_id, umb_seq) values (#{rent_id}, #{umb_seq})
 	</insert>
 	
-	<update id="updateRentReturn" parameterType="int">
-		update t_rent set rent_e_date = now() where rent_seq = #{rent_seq}
+	<update id="updateRentReturn" parameterType="kr.smhrd.domain.Rent">
+		update t_rent set rent_e_date = now(), pay_amount = #{pay_amount}, pay_method = #{pay_method}, pay_done = #{pay_done} where rent_seq = #{rent_seq}
 	</update>
-	
-	<update id="updateRentPayAmount" parameterType="kr.smhrd.domain.Rent">
-		update t_rent set pay_amount = #{pay_amount} where rent_seq = #{rent_seq}
-	</update>
-	
-	<update id="updateRentPayMethod" parameterType="kr.smhrd.domain.Rent">
-		update t_rent set pay_method = #{pay_method} where rent_seq = #{rent_seq}
-	</update>
-	
-	<update id="updateRentPayDone" parameterType="kr.smhrd.domain.Rent">
-		update t_rent set pay_done = #{pay_done} where rent_seq = #{rent_seq}
-	</update>
-	
+
 	<delete id="deleteRent" parameterType = "int">
 		delete from t_rent where rent_seq = #{rent_seq}
 	</delete>
