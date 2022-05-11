@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNav;
     MainFragment frag_main;
     CommuFragment frag_commu;
+    MypageFragment frag_mypage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         frag_main = new MainFragment();
         frag_commu = new CommuFragment();
+        frag_mypage = new MypageFragment();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_main).commit();
 
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_main).commit();
                 } else if (itemId == R.id.fragCommu){
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_commu).commit();
+                } else if (itemId == R.id.fragMyPage){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_mypage).commit();
                 }
 
                 return true;

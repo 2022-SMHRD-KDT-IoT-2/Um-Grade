@@ -68,6 +68,7 @@ layout activity_login
 layout activity_main
 layout fragment_commu
 layout fragment_main
+layout fragment_mypage
 layout layout_login
 layout layout_register
 menu frag_menu

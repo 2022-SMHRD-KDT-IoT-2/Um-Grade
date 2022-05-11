@@ -3196,6 +3196,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_commu
 layout fragment_main
+layout fragment_mypage
 layout layout_login
 layout layout_register
 layout m3_alert_dialog
