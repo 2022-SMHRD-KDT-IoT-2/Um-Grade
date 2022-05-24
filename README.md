@@ -1,6 +1,6 @@
 # ☂스마트 우산 대여 서비스
 - 모바일 애플리케이션을 활용한 IoT 스마트 우산 대여서비스
-관리 코드가 많아서 저장소 분리 : https://github.com/2022-SMHRD-UmGrade
+- 관리 코드가 많아서 저장소 분리 : https://github.com/2022-SMHRD-UmGrade
 
 # 🙌 약속
 - 다른 사람 코드 접근 시 이야기해주기!
